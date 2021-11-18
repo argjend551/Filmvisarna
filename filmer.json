@@ -1,0 +1,228 @@
+[
+     {
+          "title": "White Chicks",
+          "productionCountries": [
+               "USA"
+          ],
+          "productionYear": 2004,
+          "length": 109,
+          "genre": "Komedi",
+          "distributor": "Sony Pictures",
+          "language": "engelska",
+          "subtitles": "svenska",
+          "director": "Keenen Ivory Wayans",
+          "actors": [
+               "Marlon Wayans",
+               "Shawn Wayans",
+               "Busy Philipps"
+          ],
+          "description": "<p>Två FBI-agenter går under täckmantel i ett försök att beskydda två megarika hotellarvtagerskor från att kidnappas</p>",
+          "images": [
+               "Filmer-images/White-Chicks.jpg"
+          ],
+          "youtubeTrailers": [
+               "aeVkbNka9HM"
+          ],
+          "reviews": [
+               {
+                    "source": "imbd",
+                    "quote": "Den här filmen misslyckas aldrig med att få mig att skratta",
+                    "stars": 5,
+                    "max": 10
+               },
+               {
+                    "source": "Moviezine.se",
+                    "quote": "Hysteriska scener och situationer blandad med under bältet humor. En given klassiker!",
+                    "stars": 3,
+                    "max": 5
+               }
+          ]
+     },
+     {
+          "title": "10 orsaker att hata dig",
+          "productionCountries": [
+               "USA"
+          ],
+          "productionYear": 1999,
+          "length": 97,
+          "genre": "Romantik/Komedi",
+          "distributor": "Walt Disney Studios",
+          "language": "engelska",
+          "subtitles": "svenska",
+          "director": "Gil Junger",
+          "actors": [
+               "Heath Ledger",
+               "Julia Stiles",
+               "Joseph Gordon-Levitt"
+          ],
+          "description": "<p>En amerikansk kärlekskomedi i high school-miljö.</p>",
+          "images": [
+               "Filmer-images/10-orsaker-att-hata-dig.jpg"
+          ],
+          "youtubeTrailers": [
+               "yEmcEuS6xm4"
+          ],
+          "reviews": [
+               {
+                    "source": "imbd",
+                    "quote": "Väldigt bra romantisk komedi",
+                    "stars": 7,
+                    "max": 10
+               },
+               {
+                    "source": "Moviezine.se",
+                    "quote": "En ganska mysig film med en grym Heath Ledger",
+                    "stars": 3,
+                    "max": 5
+               }
+          ]
+     },
+     {
+          "title": "Deadpool",
+          "productionCountries": [
+               "USA"
+          ],
+          "productionYear": 2016,
+          "length": 97,
+          "genre": "Action/Äventyr",
+          "distributor": "20th Century Studios",
+          "language": "engelska",
+          "subtitles": "svenska",
+          "director": "Tim Miller",
+          "actors": [
+               "Ryan Reynolds",
+               "Morena Baccarin",
+               "T.J Miller"
+          ],
+          "description": "<p>En före detta legosoldat blir utsatt för ett experiment som ger honom exceptionella läkekrafter och beslutar sig för att bli Deadpool</p>",
+          "images": [
+               "Filmer-images/Deadpool.jpg"
+          ],
+          "youtubeTrailers": [
+               "Sy8nPI85Ih4"
+          ],
+          "reviews": [
+               {
+                    "source": "imbd",
+                    "quote": "Bättre än förväntat!",
+                    "stars": 8,
+                    "max": 10
+               },
+               {
+                    "source": "Moviezine.se",
+                    "quote": "En väldigt underhållande film! Skrattade högt och länge!",
+                    "stars": 3,
+                    "max": 5
+               }
+          ]
+     },
+     {
+          "title": "No Time to Die",
+          "productionCountries": [
+               "USA"
+          ],
+          "productionYear": 2021,
+          "length": 163,
+          "genre": "Action/Äventyr",
+          "distributor": "Universal Studios",
+          "language": "engelska",
+          "subtitles": "svenska",
+          "director": "Cary Joji Fukunaga",
+          "actors": [
+               "Daniel Craig",
+               "Lea Seydoux",
+               "Rami Malek"
+          ],
+          "description": "<p>James Bond har lämnat sin tjänst. Hans frid är kortvarig när Felix Leiter, en gammal vän från CIA, dyker upp och ber om hjälp</p>",
+          "images": [
+               "Filmer-images/No-time-to-die.jpg"
+          ],
+          "youtubeTrailers": [
+               "BIhNsAtPbPI"
+          ],
+          "reviews": [
+               {
+                    "source": "imbd",
+                    "quote": "Mycket för alla Bond-fans att njuta av",
+                    "stars": 7,
+                    "max": 10
+               },
+               {
+                    "source": "Moviezine.se",
+                    "quote": "Bra från början och till slut",
+                    "stars": 4,
+                    "max": 5
+               }
+          ]
+     },
+     {
+          "title": "Bad Boys",
+          "productionCountries": [
+               "USA"
+          ],
+          "productionYear": 1995,
+          "length": 119,
+          "genre": "Action/Komedi",
+          "distributor": "Columbia Pictures",
+          "language": "engelska",
+          "subtitles": "svenska",
+          "director": "Bilall Fallah, Adil El Arbi",
+          "actors": [
+               "Will Smith",
+               "Martin Lawrence",
+               "Vanessa Hudgens"
+          ],
+          "description": "<p>Burnette och Lowrey är två poliser som måste spåra upp stulet heroin, värt 100 miljoner</p>",
+          "images": [
+               "Filmer-images/Badboys.jpg"
+          ],
+          "youtubeTrailers": [
+               "Xm12NSa8jsM"
+          ],
+          "reviews": [
+               {
+                    "source": "imbd",
+                    "quote": "Bra action/komedi",
+                    "stars": 6,
+                    "max": 10
+               },
+               {
+                    "source": "metacritic.com",
+                    "quote": "Bad Boys är en fantastisk actionfilm med Will Smith och Martin Lawrence.",
+                    "stars": 3,
+                    "max": 5
+               }
+          ]
+     },
+     {
+          "title": "UPP",
+          "productionYear": 2009,
+          "length": 96,
+          "genre": "Äventyr/Barn",
+          "distributor": "Walt Disney Pictures",
+          "language": "engelska,svenska",
+          "subtitles": "svenska",
+          "director": "Pete Docter",
+          "description": "<p>78-årige Carl Fredricksen fäster tusentals ballonger på sitt hus och flyger till Paradise Falls och tar oavsiktligt med sig en ung fripassagerare.</p>",
+          "images": [
+               "Filmer-images/Upp.jpg"
+          ],
+          "youtubeTrailers": [
+               "AkdXuDAP2Ts"
+          ],
+          "reviews": [
+               {
+                    "source": "imbd",
+                    "quote": "En bra animerad film behöver en mycket bra historia, och den här har en.",
+                    "stars": 8,
+                    "max": 10
+               },
+               {
+                    "source": "metacritic.com",
+                    "quote": "Riktigt bra film, en av Pixars bästa animerade filmer!",
+                    "stars": 4,
+                    "max": 5
+               }
+          ]
+     }
+]
