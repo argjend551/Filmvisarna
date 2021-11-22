@@ -1,51 +1,30 @@
-import Hem from "./views/Hem.js";
-import Filmer from "./views/Filmer.js";
-import Biljetter from "./views/Biljetter.js";
+// A global variable to store all data in
+let data = {};
 
-const navigateTo = url => {
-  history.pushState(null, null, url);
-  router();
-};
-
-const router = async () => {
-  const routes = [
-    { path: "/", view: Hem },
-    { path: "/filmer", view: Filmer },
-    { path: "/biljetter", view: Biljetter },
-  ];
-
-  //Test each route for potential match
-  const potentialMatches = routes.map(route => {
-    return {
-      route: route,
-      isMatch: location.pathname === route.path
-    };
-  });
-  let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
-  // Uses / (hem) as route if no match is found. Do 
-  //we want to direct it elsewhere?
-  if (!match) {
-    match = {
-      route: routes[0],
-      isMatch: true
-    };
+async function readJSON() {
+  // Read json and put in the data variable
+  for (let type of ['filmer', 'shows', 'auditoriums', 'bookings']) {
+    data[type] = await JSON._load(type + '.json');
   }
+  // Run start function 
+  start();
+}
 
-  const view = new match.route.view();
+// A helper to find things by id (films, shows etc.)
+function findById(type, id) {
+  return data[type].find(x => x.id === id);
+}
 
-  document.querySelector("#app").innerHTML = await view.getHtml();
+async function start() {
+  //console.log(findById('auditoriums', 2));
+  //console.log(await book(2, [30, 80, 81]));
+  //freesats and show number in parameter
+  freeSeats(1);
+  seatsFunction();
+  // myBook();
 
-};
+}
 
-window.addEventListener("popstate", router);
+readJSON();
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.body.addEventListener("click", e => {
-    if (e.target.matches("[data-link")) {
-      e.preventDefault();
-      navigateTo(e.target.href);
-    }
-  });
 
-  router();
-});

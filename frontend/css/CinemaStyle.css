@@ -1,0 +1,145 @@
+* {
+  font-size: 18px;
+  align-items: center;
+  font-weight: 700;
+}
+
+
+.screen {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#cinema {
+  display: none;
+
+}
+
+.row1 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row2 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row3 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row4 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row5 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row6 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row7 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.row8 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+.seats {
+  background-color: rgb(184, 16, 16);
+  padding: 15px 32px;
+  height: 12px;
+  width: 25px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+}
+
+.selected-seat {
+  background-color: rgb(2, 243, 2);
+  padding: 15px 32px;
+  height: 12px;
+  width: 25px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+}
+
+
+.book {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  width: 20%;
+  height: 3%;
+
+}
+
+.disabledseats {
+  background-color: rgb(87, 87, 87);
+  padding: 15px 32px;
+  height: 12px;
+  width: 25px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+}
