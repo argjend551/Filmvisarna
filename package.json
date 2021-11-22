@@ -1,0 +1,24 @@
+{
+  "name": "filmvisarna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argjend551/Filmvisarna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/argjend551/Filmvisarna/issues"
+  },
+  "homepage": "https://github.com/argjend551/Filmvisarna#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonflex": "^1.0.10"
+  }
+}
