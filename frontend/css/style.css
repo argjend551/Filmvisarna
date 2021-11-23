@@ -1,0 +1,54 @@
+.carousel-item active, .carousel-item {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+   position: relative;
+}
+
+.carousel-item active iframe, .carousel-item iframe  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER */
+.footer{
+  background: grey;
+  height: 300px;
+  position: relative;
+}
+
+.footer .footer-content{
+  border: 1px solid white;
+  height: 350px;
+  display: flex;
+}
+
+.footer .footer-content .footer-selection{
+  flex: 1;
+  padding: 25px;
+
+}
+.footer .footer-content .footer-selection-logo{
+position: relative;
+padding-bottom: 40px;
+right: 80px;
+}
+
+.footer .footer-bottom{
+  background:rgb(87, 87, 87);
+  color: rgb(199, 198, 198);
+  height: 35px;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+ 
+
+}
