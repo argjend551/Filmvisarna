@@ -6,9 +6,10 @@ export default class extends AbstractView {
     this.setTitle("Hem");
   }
 
-  async getHtmlHeader() {
+
+  async getHtml() {
     return `
-    <div class="container">
+  <div class="container">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -41,16 +42,7 @@ export default class extends AbstractView {
   <br><br>
 </div>
 </div>
-<div>
-    <h1>Hem</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae quibusdam, tempore ullam ratione ipsum <br> quaerat repellendus mollitia totam veritatis asperiores dolor odit iste consequatur repudiandae? Nisi, ipsum quasi! Eos.
-    </p></div>
-    `;
-  }
-
-  async getHtml() {
-    return `
-    
+</div>
 <div>
     <h1>Hem</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae quibusdam, tempore ullam ratione ipsum <br> quaerat repellendus mollitia totam veritatis asperiores dolor odit iste consequatur repudiandae? Nisi, ipsum quasi! Eos.
