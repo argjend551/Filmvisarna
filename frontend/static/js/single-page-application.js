@@ -1,6 +1,7 @@
 import Hem from "./views/Hem.js";
 import Filmer from "./views/Filmer.js";
 import Biljetter from "./views/Biljetter.js";
+import FilmView from "./views/FilmView.js";
 
 const navigateTo = url => {
   history.pushState(null, null, url);
@@ -12,6 +13,7 @@ const router = async () => {
     { path: "/", view: Hem },
     { path: "/filmer", view: Filmer },
     { path: "/biljetter", view: Biljetter },
+    { path: "/film", view: FilmView },
   ];
 
   //Test each route for potential match
