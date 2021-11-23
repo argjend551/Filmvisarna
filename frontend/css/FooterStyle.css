@@ -1,16 +1,3 @@
-.carousel-item active, .carousel-item {
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-   position: relative;
-}
-
-.carousel-item active iframe, .carousel-item iframe  {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 /* FOOTER */
 .footer{
   background: grey;
@@ -48,7 +35,5 @@ right: 80px;
   left: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
-
- 
 
 }
