@@ -1,0 +1,22 @@
+body{
+  background-color: #2F303A;
+}
+.poster{
+  height: 350px;
+  width: auto ;
+  border-radius: 25px;
+
+}
+
+#title{
+  color: white;
+  margin-top: 0rem;
+    font-size: .93rem;
+    line-height: .635rem;
+    min-height: 7rem;
+    white-space:normal;
+    opacity: 1;
+    max-height: 1.75rem;
+    overflow: hidden;
+    display: -webkit-box;
+}
