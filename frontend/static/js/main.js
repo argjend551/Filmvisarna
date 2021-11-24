@@ -27,4 +27,7 @@ async function start() {
 
 readJSON();
 
-
+//kod för navbar collapse att stängas efter du klickat på link
+$(document).on('click', function () {
+  $('.collapse').collapse('hide');
+})

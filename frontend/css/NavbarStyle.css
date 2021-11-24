@@ -1,39 +1,35 @@
 .logo {
+     /* max-width: 250px;
+     max-width: 150px; */
 
-     position: relative;
+     position: absolute;
 
-     left: -80px;
-     width: 250px;
-     height: 150px;
-     padding-left: 20px;
-
+     height: 62px;
+     width: 100px;
+     top: -6px;
 }
 
-nav {
-     height: 100px;
+.navbar-collapse {
+     background-color: #8d2168;
 }
 
 
+.navbar-light {
+
+     background-color: #8d2168;
+}
 
 .nav-link {
      position: relative;
-
-     left: -150px;
-     color: black;
-     font-weight: 600;
      border-radius: 20%;
+     left: 100px;
 }
 
 .nav-link:hover {
-     color: rgb(255, 255, 255);
      background-color: #7e1d5c;
-
 }
 
-button {
+
+.navbar-light .navbar-toggler-icon {
      color: black;
-}
-
-.navbar-dark .navbar-toggler-icon {
-     background-image: url("data:image/svg+xml;..");
 }

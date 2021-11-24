@@ -17,27 +17,27 @@
 
 <body>
      <header>
-          <nav class="navbar navbar-expand-lg" style="background-color: #8d2168;">
-               <a class="navbar-brand" href="/hem"><img class="logo" src="Filmer-images/Alis_Filmer_Logo.png" alt=""
-                         srcset=""></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation ">
-                    <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                         <li class="nav-item active">
-                              <a href="/" class="nav-link" data-link>Hem</a>
-                         </li>
-                         <li class="nav-item active">
-                              <a href="/filmer" class="nav-link" data-link>Filmer</a>
-                         </li>
-                         <li class="nav-item active">
-                              <a href="/biljetter" class="nav-link" data-link>Biljetter</a>
-                         </li>
-
-                    </ul>
-
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+               <div class="container-fluid">
+                    <a class="navbar-brand" href="/hem"><img src="Filmer-images/Filmrulle.png" class="logo" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                         aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item active">
+                                   <a href="/" class="nav-link" data-link>Hem</a>
+                              </li>
+                              <li class="nav-item active">
+                                   <a href="/filmer" class="nav-link" data-link>Filmer</a>
+                              </li>
+                              <li class="nav-item active">
+                                   <a href="/biljetter" class="nav-link" data-link>Biljetter</a>
+                              </li>
+                         </ul>
+                    </div>
                </div>
           </nav>
 
@@ -48,11 +48,8 @@
           </nav> -->
      </header>
      <main>
-
           <div id="app"></div>
-          <div id="films"></div>
-
-
+          <div id="films"> </div>
      </main>
 
      <!--HTML för säterna-->
@@ -68,7 +65,6 @@
                <div class="row6"></div>
                <div class="row7"></div>
                <div class="row8"></div>
-
           </div>
           <button class="book">Book</button>
 
@@ -82,24 +78,37 @@
      <script src="static/js/book.js"></script>
      <script src="static/js/main.js"></script>
      <!-- footer -->
-     <div class="footer">
-          <div class="footer-content">
-               <div class="footer-selection-logo">
-                    <img src="Filmer-images/Alis_Filmer_Logo.png" alt="Loga" width="400" height="300">
 
-                    </p>
+     <footer class="footer-content">
+          <div class="container-fluid">
+               <div class="row row-cols-3 py-3 my-3">
+                    <div class="col-4 col-xs-3">
+                         <img class="img-fluid" src="Filmer-images/Alis_Filmer_Logo.png" alt="Loga" width="400"
+                              height="300">
+                    </div>
+                    <div class="col-4">
+                         <p3>Våra öppettider:</p3><br>
+                         <p2>Måndag - Torsdag: 10:00 - 21:00</p2><br>
+                         <p2>Fredag - Söndag: 10:00 - 23:00</p2>
+                    </div>
+                    <div class="col-4 col-xs-3">
+                         <p3>Länkar:</p3><br>
+                         <a href="/filmer" class="footer-links" data-link>Filmer/Trailers</a><br>
+                         <a href="/biljetter" class="footer-links" data-link>Mina biljetter</a>
+                    </div>
                </div>
-               <div class="footer-selection links">
-
-               </div>
-               <div class="footer-selection opening"></div>
 
                <div class="footer-bottom">
                     &copy; Copyright: Filmvisarna AB | Ali´s Filmer
                </div>
-          </div>
-     </div>
 
+          </div>
+     </footer>
+
+
+
+     </div>
+     </div>
 </body>
 
 </html>

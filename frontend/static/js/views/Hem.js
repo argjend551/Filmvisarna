@@ -45,8 +45,7 @@ export default class extends AbstractView {
 </div>
 <div>
     <h1>Hem</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae quibusdam, tempore ullam ratione ipsum <br> quaerat repellendus mollitia totam veritatis asperiores dolor odit iste consequatur repudiandae? Nisi, ipsum quasi! Eos.
-    </p></div>
+    </div>
     `;
   }
 }
