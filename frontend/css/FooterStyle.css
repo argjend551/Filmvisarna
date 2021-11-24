@@ -36,3 +36,23 @@ right: 80px;
   padding-bottom: 10px;
 
 }
+.footer .footer-links{
+text-decoration: none;
+font-size: 15px;
+color: white;
+text-align: left;
+padding-bottom: 80px;
+}
+
+p3{
+  font-size: 15px;
+  float:left;
+  color: white;
+
+}
+
+p2{
+  font-size: 15px;
+  color: white;
+  
+}
