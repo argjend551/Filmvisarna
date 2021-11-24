@@ -1,12 +1,15 @@
-.carousel-item active, .carousel-item {
+.carousel-item active,
+.carousel-item {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-   position: relative;
+  position: relative;
 }
 
-.carousel-item active iframe, .carousel-item iframe  {
+.carousel-item active iframe,
+.carousel-item iframe {
   position: absolute;
   width: 100%;
+  padding-top: 10%;
   height: 100%;
 }
