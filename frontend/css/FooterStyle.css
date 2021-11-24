@@ -1,27 +1,23 @@
 /* FOOTER */
-.footer{
+.footer-content{
   background: grey;
   height: 300px;
   position: relative;
 }
 
-.footer .footer-content{
+.footer-content .footer-content{
   height: 350px;
   display: flex;
 }
 
-.footer .footer-content .footer-selection{
+.footer-content .footer-selection{
   flex: 1;
   padding: 25px;
 
 }
-.footer .footer-content .footer-selection-logo{
-position: relative;
-padding-bottom: 40px;
-right: 80px;
-}
 
-.footer .footer-bottom{
+
+.footer-content .footer-bottom{
   background:rgb(87, 87, 87);
   color: rgb(199, 198, 198);
   height: 35px;
@@ -36,7 +32,7 @@ right: 80px;
   padding-bottom: 10px;
 
 }
-.footer .footer-links{
+.footer-content .footer-links{
 text-decoration: none;
 font-size: 15px;
 color: white;
@@ -47,13 +43,10 @@ padding-right: 50px;
 
 p3{
   font-size: 15px;
-  float:left;
   color: white;
-
 }
 
 p2{
   font-size: 15px;
   color: white;
-  
 }
