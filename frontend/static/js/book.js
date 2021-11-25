@@ -21,12 +21,24 @@ async function book(showId, seats) {
     }
   }
 
+  function makeid(length) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    var charactersLength = characters.length;
+    result = characters.charAt(Math.floor(Math.random() *
+      charactersLength));
+    return result;
+  }
+
   // Create a new booking
   let booking = {
-    id: data.bookings.length + 1,
+    id: makeid(1) + (Math.floor(Math.random() * 9999) + 1000),
     showId,
-    seats
+    seats,
   };
+  if (result === id) {
+    makeid(length);
+  }
 
   // Add the booking to the existing bookings
   data.bookings.push(booking);
@@ -40,24 +52,11 @@ async function book(showId, seats) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Find all free seats for a show
 function freeSeats(showId) {
   // Find the show
   let show = findById('shows', showId);
   if (!show) { return 'Show does not exist!'; }
-
-
 
   // Find the auditorium
   let auditorium = data.auditoriums.find(x => x.name == show.auditorium);
@@ -70,7 +69,6 @@ function freeSeats(showId) {
     if (booking.showId != showId) { continue; }
     // Add the seats as occupied
     occupiedSeats.push(...booking.seats);
-
   }
 
   // Build an array with all seats in the auditorium
@@ -81,7 +79,6 @@ function freeSeats(showId) {
     for (let i = 0; i < seatsInARow; i++) {
       row.push(occupiedSeats.includes(seatNumber) ? 'X' : seatNumber);
       seatNumber++;
-
     }
 
   }
@@ -97,7 +94,6 @@ function freeSeats(showId) {
 
   return seats;
 }
-
 
 // the function to select seats to book
 function seatsFunction() {
@@ -129,8 +125,6 @@ function seatsFunction() {
       }
     }
 
-
-
   });
   // when you press the book button make a booking.
   $(".book").on("click", function () {
@@ -138,9 +132,6 @@ function seatsFunction() {
     console.log(book(1, [...selectedSeats]));
   });
 }
-
-
-
 
 //Function that creates a button for every row and seat in the auditiorium 'storaSalong'
 //.row1.append grabs the class and creates buttons for row1
@@ -214,7 +205,6 @@ function lillaSalong
     $('.row6').append('<button class="seats" value=' + f[i] + '>' + f[i] +
       '</button>');
   }
-
 
 
   // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
