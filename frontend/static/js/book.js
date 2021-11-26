@@ -32,13 +32,10 @@ async function book(showId, seats) {
 
   // Create a new booking
   let booking = {
-    id: makeid(1) + (Math.floor(Math.random() * 9999) + 1000),
+    id: makeid(1) + (Math.floor(Math.random() * 8999) + 1000),
     showId,
     seats,
   };
-  if (result === id) {
-    makeid(length);
-  }
 
   // Add the booking to the existing bookings
   data.bookings.push(booking);

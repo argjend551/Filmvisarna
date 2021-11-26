@@ -13,6 +13,7 @@ async function readJSON() {
 // A helper to find things by id (films, shows etc.)
 function findById(type, id) {
   return data[type].find(x => x.id === id);
+
 }
 
 async function start() {
