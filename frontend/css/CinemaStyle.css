@@ -2,27 +2,57 @@
   font-size: 18px;
   align-items: center;
   font-weight: 700;
-  font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+  background-color: black;
+}
+
+hr {
+  color: white;
 }
 
 
+#mySelect {
+  position: absolute;
+  border: none;
+  padding: 0 1em 0 0;
+  width: 7%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  left: 72%;
+}
+
+th {
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: red;
+}
+
+#cinema {
+  display: none;
+
+  margin-top: 100px;
+}
+
 .screen {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 35%;
   width: 30%;
   border: 1px solid rgb(255, 255, 255);
 }
 
-#cinema {
-display: none;
-}
 
 .row1 {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 30%;
+  top: 60%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -32,7 +62,7 @@ display: none;
   display: flex;
   margin: 0;
   position: absolute;
-  top: 35%;
+  top: 65%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -42,7 +72,7 @@ display: none;
   display: flex;
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 70%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -52,7 +82,7 @@ display: none;
   display: flex;
   margin: 0;
   position: absolute;
-  top: 45%;
+  top: 75%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -62,7 +92,7 @@ display: none;
   display: flex;
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -72,7 +102,7 @@ display: none;
   display: flex;
   margin: 0;
   position: absolute;
-  top: 55%;
+  top: 85%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -82,7 +112,7 @@ display: none;
   display: flex;
   margin: 0;
   position: absolute;
-  top: 60%;
+  top: 90%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -93,7 +123,7 @@ display: none;
   display: flex;
   margin: 0;
   position: absolute;
-  top: 65%;
+  top: 95%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -127,7 +157,7 @@ display: none;
 .book {
   position: absolute;
   top: 80%;
-  left: 40%;
+  left: 75%;
   width: 20%;
   height: 3%;
 
@@ -142,4 +172,20 @@ display: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
+}
+
+
+.table {
+  color: white;
+}
+
+#span3 {
+  display: none;
+  width: 50%;
+  color: white;
+  margin-top: 100px;
+  margin-left: 30%;
+  height: 250px !important;
+  overflow: scroll;
+  overflow-x: hidden;
 }

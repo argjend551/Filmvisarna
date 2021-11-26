@@ -93,7 +93,7 @@ function freeSeats(showId) {
 }
 
 // the function to select seats to book
-function seatsFunction() {
+function seatsFunction(a) {
   //creating empty array
   let selectedSeats = [];
   // if you click on a seat displayed on the screen,
@@ -122,13 +122,28 @@ function seatsFunction() {
       }
     }
 
+
+
   });
   // when you press the book button make a booking.
   $(".book").on("click", function () {
+    console.log(showid);
+    if (selectedSeats.length > 0) {
+      book(showid, [...selectedSeats]);
 
-    console.log(book(1, [...selectedSeats]));
+    }
+    $(".row1").empty();
+    $(".row2").empty();
+    $(".row3").empty();
+    $(".row4").empty();
+    $(".row5").empty();
+    $(".row6").empty();
+    $(".row7").empty();
+    $(".row8").empty();
+    freeSeats(showid);
   });
 }
+
 
 //Function that creates a button for every row and seat in the auditiorium 'storaSalong'
 //.row1.append grabs the class and creates buttons for row1
