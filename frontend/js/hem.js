@@ -1,14 +1,8 @@
-import AbstractView from "./AbstractView.js";
-
-export default class extends AbstractView {
-  constructor() {
-    super();
-    this.setTitle("Hem");
-  }
 
 
-  async getHtml() {
-    return `
+// Content for the start/hem page
+function hem() {
+  $('main').html(`
   <div class="container">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
   <div class="carousel-inner">
@@ -39,10 +33,9 @@ export default class extends AbstractView {
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-  <br><br>
 </div>
 </div>
 </div>
-    `;
-  }
+   `);
 }
+

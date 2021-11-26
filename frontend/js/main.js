@@ -31,3 +31,24 @@ readJSON();
 $(document).on('click', function () {
   $('.collapse').collapse('hide');
 })
+
+function reactOnHashChange() {
+  let pageToDisplay = location.hash || 'hem';
+  pageToDisplay = pageToDisplay.replace('#', '');
+  //If the hash starts with film call the film function with
+  //the number after '-' as a parameter
+  /*if (pageToDisplay.indexOf('film') === 0) {
+    let filmId = +pageToDisplay.split('-')[1];
+    film(filmId);
+    return;
+  }*/
+  //Call a function that has the same name as the page to display
+  window[pageToDisplay]();
+}
+
+//Listens to changes in the last part of the URL, after the #
+window.onhashchange = reactOnHashChange;
+//And also call reactOnHashChange on initialt page load
+reactOnHashChange();
+
+
