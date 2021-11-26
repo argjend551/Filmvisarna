@@ -2,6 +2,7 @@
   font-size: 18px;
   align-items: center;
   font-weight: 700;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 
@@ -14,8 +15,7 @@
 }
 
 #cinema {
-  display: none;
-
+display: none;
 }
 
 .row1 {
