@@ -20,6 +20,7 @@ async function start() {
   //console.log(findById('auditoriums', 2));
   //console.log(await book(2, [30, 80, 81]));
   //freesats and show number in parameter
+  hem();
   filterfilm();
   displayFilms();
   // myBook();
