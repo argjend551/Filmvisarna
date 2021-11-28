@@ -1,9 +1,8 @@
 
-
 // Content for the start/hem page
 function hem() {
   $('main').html(`
-  <div class="container">
+  <div class="carouselContainer">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -35,7 +34,17 @@ function hem() {
   </button>
 </div>
 </div>
-</div>
-   `);
+</div> 
+`);
+  let html = '';
+  var newdiv = document.createElement('div');
+  newdiv.className = 'row';
+  for (let i = 0; i < data.filmer.length; i++) {
+    let div = document.createElement("div");
+    div.className = 'col-md-4 col-xs-4';
+    newdiv.appendChild(div);
+    html += `<p><a href="#film-${data.filmer[i].Id}"><img class="poster" src="${data.filmer[i].images}"></img></a></p><h2 id ='title'><br>  ${data.filmer[i].title} <br></h2>`
+  }
+  //console.log('html är:' + html.innerHTML);
+  $('main').append(html);
 }
-

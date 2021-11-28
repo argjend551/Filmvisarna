@@ -20,10 +20,17 @@ async function start() {
   //console.log(findById('auditoriums', 2));
   //console.log(await book(2, [30, 80, 81]));
   //freesats and show number in parameter
-  hem();
+  if (location.hash == 'hem' || location.hash == '') {
+    hem();
+  }
+  //Call reactOnHashChange on initialt page load
+  else {
+    reactOnHashChange();
+  }
   filterfilm();
   displayFilms();
   // myBook();
+
 
 }
 
@@ -39,18 +46,16 @@ function reactOnHashChange() {
   pageToDisplay = pageToDisplay.replace('#', '');
   //If the hash starts with film call the film function with
   //the number after '-' as a parameter
-  /*if (pageToDisplay.indexOf('film') === 0) {
+  if (pageToDisplay.indexOf('film') === 0) {
     let filmId = +pageToDisplay.split('-')[1];
     film(filmId);
     return;
-  }*/
+  }
   //Call a function that has the same name as the page to display
   window[pageToDisplay]();
 }
 
 //Listens to changes in the last part of the URL, after the #
 window.onhashchange = reactOnHashChange;
-//And also call reactOnHashChange on initialt page load
-reactOnHashChange();
 
 
