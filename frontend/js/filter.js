@@ -49,6 +49,7 @@ function displayFilms(type) {
 
      }
      $("td").click(function () {
+
           showid = parseInt($(this).closest('td').attr('class'));
           console.log(showid);
           $(".row1").empty();
@@ -78,7 +79,7 @@ function filterfilm(a) {
                $(".film").empty();
                $(".datum").empty();
                $(".salong").empty();
-
+               displayFilms();
           }
 
           if (value == 1) {

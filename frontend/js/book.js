@@ -130,7 +130,7 @@ function seatsFunction(a) {
     console.log(showid);
     if (selectedSeats.length > 0) {
       book(showid, [...selectedSeats]);
-
+      selectedSeats = [];
     }
     $(".row1").empty();
     $(".row2").empty();
@@ -150,37 +150,37 @@ function seatsFunction(a) {
 // a[i] gives the value of the position in the array(seatnumber)
 function storaSalong(a, b, c, d, e, f, g, h) {
   for (var i = 0; i < a.length; i++) {
-    $('.row1').append('<button class="seats" value=' + a[i] + '>' + a[i] +
-      '</button>');
+    $('.row1').append('<div class="seats" value=' + a[i] + '>' + a[i] +
+      '</div>');
   }
   for (var i = 0; i < b.length; i++) {
-    $('.row2').append('<button class="seats"value=' + b[i] + '>' + b[i] +
-      '</button>');
+    $('.row2').append('<div class="seats"value=' + b[i] + '>' + b[i] +
+      '</div>');
   }
   for (var i = 0; i < c.length; i++) {
-    $('.row3').append('<button class="seats"value=' + c[i] + '>' + c[i] +
-      '</button>');
+    $('.row3').append('<div class="seats"value=' + c[i] + '>' + c[i] +
+      '</div>');
   }
   for (var i = 0; i < d.length; i++) {
-    $('.row4').append('<button class="seats"value=' + d[i] + '>' + d[i] +
-      '</button>');
+    $('.row4').append('<div class="seats"value=' + d[i] + '>' + d[i] +
+      '</div>');
   }
   for (var i = 0; i < e.length; i++) {
-    $('.row5').append('<button class="seats" value=' + e[i] + '>' + e[i] +
-      '</button>');
+    $('.row5').append('<div class="seats" value=' + e[i] + '>' + e[i] +
+      '</div>');
   }
   for (var i = 0; i < f.length; i++) {
-    $('.row6').append('<button class="seats" value=' + f[i] + '>' + f[i] +
-      '</button>');
+    $('.row6').append('<div class="seats" value=' + f[i] + '>' + f[i] +
+      '</div>');
   }
 
   for (var i = 0; i < g.length; i++) {
-    $('.row7').append('<button class="seats" value=' + g[i] + '>' + g[i] +
-      '</button>');
+    $('.row7').append('<div class="seats" value=' + g[i] + '>' + g[i] +
+      '</div>');
   }
   for (var i = 0; i < h.length; i++) {
-    $('.row8').append('<button class="seats" value=' + h[i] + '>' + h[i] +
-      '</button>');
+    $('.row8').append('<div class="seats" value=' + h[i] + '>' + h[i] +
+      '</div>');
   }
 
   $('[value="X"]').attr('class', 'disabledseats');
@@ -194,34 +194,34 @@ function storaSalong(a, b, c, d, e, f, g, h) {
 function lillaSalong
   (a, b, c, d, e, f) {
   for (var i = 0; i < a.length; i++) {
-    $('.row1').append('<button class="seats" value=' + a[i] + '>' + a[i] +
-      '</button>');
+    $('.row1').append('<div class="seats" value=' + a[i] + '>' + a[i] +
+      '</div>');
   }
   for (var i = 0; i < b.length; i++) {
-    $('.row2').append('<button class="seats"value=' + b[i] + '>' + b[i] +
-      '</button>');
+    $('.row2').append('<div class="seats"value=' + b[i] + '>' + b[i] +
+      '</div>');
   }
   for (var i = 0; i < c.length; i++) {
-    $('.row3').append('<button class="seats"value=' + c[i] + '>' + c[i] +
-      '</button>');
+    $('.row3').append('<div class="seats"value=' + c[i] + '>' + c[i] +
+      '</div>');
   }
   for (var i = 0; i < d.length; i++) {
-    $('.row4').append('<button class="seats"value=' + d[i] + '>' + d[i] +
-      '</button>');
+    $('.row4').append('<div class="seats"value=' + d[i] + '>' + d[i] +
+      '</div>');
   }
   for (var i = 0; i < e.length; i++) {
-    $('.row5').append('<button class="seats" value=' + e[i] + '>' + e[i] +
-      '</button>');
+    $('.row5').append('<div class="seats" value=' + e[i] + '>' + e[i] +
+      '</div>');
   }
   for (var i = 0; i < f.length; i++) {
-    $('.row6').append('<button class="seats" value=' + f[i] + '>' + f[i] +
-      '</button>');
+    $('.row6').append('<div class="seats" value=' + f[i] + '>' + f[i] +
+      '</div>');
   }
+
 
 
   // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
   // then we disable the buttons so you cannot press them.
-
   $('[value="X"]').attr('class', 'disabledseats');
   $(".disabledseats").attr("disabled", "disabled");
 
