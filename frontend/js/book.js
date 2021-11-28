@@ -126,7 +126,7 @@ function seatsFunction(a) {
 
   });
   // when you press the book button make a booking.
-  $(".book").on("click", function () {
+  $(".btn").on("click", function () {
     console.log(showid);
     if (selectedSeats.length > 0) {
       book(showid, [...selectedSeats]);

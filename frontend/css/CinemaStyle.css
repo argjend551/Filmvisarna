@@ -32,7 +32,7 @@ td:hover {
 
 #cinema {
 
-  margin-top: 100px;
+  margin-top: 1000px;
 }
 
 .screen {
@@ -154,7 +154,7 @@ td:hover {
 }
 
 
-.book {
+.btn {
   position: absolute;
   left: 90%;
   top: 80%;
