@@ -78,7 +78,6 @@ function filterfilm(a) {
                $(".film").empty();
                $(".datum").empty();
                $(".salong").empty();
-               starter();
 
           }
 
