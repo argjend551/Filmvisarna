@@ -28,8 +28,7 @@ async function start() {
   else {
     reactOnHashChange();
   }
-  filterfilm();
-  displayFilms();
+ 
   // myBook();
 
 
