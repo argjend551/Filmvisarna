@@ -1,4 +1,4 @@
-fetch("/json/filmer.json")
+/*fetch("/json/filmer.json")
   .then(function (response) {
     return response.json();
   })
@@ -26,4 +26,4 @@ function appendData(data) {
     mainContainer.appendChild(newdiv);
 
   }
-}
+}*/

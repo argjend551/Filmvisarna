@@ -20,6 +20,7 @@ async function start() {
   //console.log(findById('auditoriums', 2));
   //console.log(await book(2, [30, 80, 81]));
   //freesats and show number in parameter
+  //Run hem() if the Url has #hem or just # to get it to the hem-view.
   if (location.hash == 'hem' || location.hash == '') {
     hem();
   }
@@ -48,7 +49,7 @@ function reactOnHashChange() {
   //the number after '-' as a parameter
   if (pageToDisplay.indexOf('film') === 0) {
     let filmId = +pageToDisplay.split('-')[1];
-    film(filmId);
+    filmer(filmId);
     return;
   }
   //Call a function that has the same name as the page to display

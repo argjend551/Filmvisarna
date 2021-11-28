@@ -43,7 +43,7 @@ function hem() {
     let div = document.createElement("div");
     div.className = 'col-md-4 col-xs-4';
     newdiv.appendChild(div);
-    html += `<p><a href="#film-${data.filmer[i].Id}"><img class="poster" src="${data.filmer[i].images}"></img></a></p><h2 id ='title'><br>  ${data.filmer[i].title} <br></h2>`
+    html += `<p><a href="#film-${data.filmer[i].id}"><img class="poster" src="${data.filmer[i].images}"></img></a></p><h2 id ='title'><br>  ${data.filmer[i].title} <br></h2>`
   }
   //console.log('html är:' + html.innerHTML);
   $('main').append(html);
