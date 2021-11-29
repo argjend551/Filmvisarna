@@ -9,10 +9,6 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-  
-
-
 }
 
 #title{
@@ -25,4 +21,152 @@ body{
     white-space:normal;
     opacity: 1;
     
+}
+.post{
+  width: auto;
+  height: 400px;
+  border-radius: 10px;
+  padding: auto;
+
+}
+h3{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+    opacity: .9;
+    font-size: 1.2rem;
+    
+    min-height: 2rem;
+    white-space:normal;
+  
+
+}
+h4{
+   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: .7;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    min-height: 7rem;
+    white-space:normal;
+  
+
+}
+h5{
+  color: blanchedalmond;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 1rem;
+  opacity: 0.7;
+
+}
+p{
+  padding: auto;
+
+}
+#span3{
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.book{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: green;
+ position:relative;
+  top: 10px;
+  font-size: 1.5rem;
+  left:95%;
+  border-radius: 15%;
+}
+#cinema {
+
+  margin-top: 1000px;
+}
+
+.screen {
+  
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 30%;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+.row1 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row2 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row3 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row4 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row5 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row6 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.row7 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.row8 {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
