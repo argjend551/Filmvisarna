@@ -2,10 +2,11 @@
 // Content for the start/hem page
 function hem() {
   $('main').html(`
+  
   <div class="carouselContainer">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Xm12NSa8jsM?rel=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block w-100"></iframe>
     </div>
     <div class="carousel-item">
@@ -17,7 +18,7 @@ function hem() {
     <div class="carousel-item" >
       <iframe width="560" height="315" src="https://www.youtube.com/embed/BIhNsAtPbPI?rel=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block w-100"></iframe>
     </div>
-    <div class="carousel-item" >
+    <div class="carousel-item active" >
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Sy8nPI85Ih4?rel=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block w-100"></iframe>
     </div>
     <div class="carousel-item" >
