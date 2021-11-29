@@ -40,7 +40,7 @@ function filmer(id) {
 </div>
 
 
- <div id="cinema">
+ <div class="cinema">
           <div class="screen"></div>
 
           <div class="col-12 col-sm-6 col-lg-3">

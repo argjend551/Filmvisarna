@@ -1,28 +1,30 @@
-body{
+body {
   background-color: #2F303A;
-  
+
 }
-.poster{
+
+.poster {
   height: 350px;
-  width: auto ;
+  width: auto;
   border-radius: 25px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-#title{
+#title {
   color: white;
-    text-align: center;
-    margin-top: 0rem;
-    font-size: .93rem;
-    line-height: .635rem;
-    min-height: 7rem;
-    white-space:normal;
-    opacity: 1;
-    
+  text-align: center;
+  margin-top: 0rem;
+  font-size: .93rem;
+  line-height: .635rem;
+  min-height: 7rem;
+  white-space: normal;
+  opacity: 1;
+
 }
-.post{
+
+.post {
   width: auto;
   height: 400px;
   border-radius: 10px;
@@ -31,117 +33,29 @@ body{
   margin-top: 10px;
 
 }
-.filmText{
+
+.filmText {
+  width: auto;
   color: white;
   margin-left: 500px;
   margin-top: -480px;
+  
 
 }
 
-p{
+#filmContainer {
+}
+
+p {
   padding: auto;
 
 }
-.book{
+
+.book {
   background-color: green;
- position:relative;
+  position: relative;
   top: 10px;
   font-size: 1.5rem;
-  left:95%;
+  left: 95%;
   border-radius: 15%;
-}
-#cinema {
-
-  margin-top: 1000px;
-}
-
-.screen {
-  
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 30%;
-  border: 1px solid rgb(255, 255, 255);
-}
-
-
-.row1 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row2 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row3 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row4 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row5 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row6 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row7 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 105%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-}
-
-.row8 {
-  display: flex;
-  margin: 0;
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }

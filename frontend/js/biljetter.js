@@ -1,8 +1,8 @@
 //Content for the ticket page
 function biljetter() {
   
-  $('main').html(`
-
+     $('main').html(`
+  <div id="span4"></div>
    <div id="span3">
 <select id="mySelect">
      <option value="0">Välj film</option>
@@ -38,7 +38,7 @@ function biljetter() {
 </div>
 
 
- <div id="cinema">
+ <div class="cinema">
           <div class="screen"></div>
 
                <div class="row1"></div>

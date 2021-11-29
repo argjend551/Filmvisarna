@@ -30,14 +30,16 @@ td:hover {
   background-color: red;
 }
 
-#cinema {
+.cinema {
+  display: block;
   margin-top: 800px;
+  margin-left: 580px;
 }
 
 .screen {
 
   position: absolute;
-  top: 65%;
+  top: 140%;
   left: 35%;
   width: 30%;
   border: 1px solid rgb(255, 255, 255);
@@ -48,7 +50,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 75%;
+  top: 150%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -58,7 +60,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 80%;
+  top: 155%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -68,7 +70,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 85%;
+  top: 160%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -78,7 +80,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 90%;
+  top: 165%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -88,7 +90,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 95%;
+  top: 170%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -98,7 +100,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 100%;
+  top: 175%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -108,7 +110,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 105%;
+  top: 180%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -119,7 +121,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 110%;
+  top: 185%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -156,7 +158,7 @@ td:hover {
 .btn {
   position: absolute;
   left: 90%;
-  top: 80%;
+  top: 180%;
 }
 
 .disabledseats {
@@ -177,6 +179,7 @@ td:hover {
 }
 
 #span3 {
+  display: block;
   width: 50%;
   color: white;
   margin-top: 200px;
@@ -184,4 +187,15 @@ td:hover {
   height: 250px !important;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+#span4 {
+  width: 560px;
+  height: 315px;
+  display: block;
+  width: 50%;
+  color: white;
+  margin-top: 200px;
+  margin-left: 30%;
+
 }
