@@ -150,7 +150,9 @@ function seatsFunction(a) {
 //.row1.append grabs the class and creates buttons for row1
 // a[i] gives the value of the position in the array(seatnumber)
 function storaSalong(a, b, c, d, e, f, g, h) {
+  
   for (var i = 0; i < a.length; i++) {
+
     $('.row1').append('<div class="seats" value=' + a[i] + '>' + a[i] +
       '</div>');
   }

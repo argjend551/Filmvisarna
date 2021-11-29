@@ -31,87 +31,75 @@ td:hover {
 }
 
 .cinema {
-  display: block;
-  margin-top: 800px;
+  margin-top: 80px;
   margin-left: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.screen {
-
-  position: absolute;
-  top: 140%;
-  left: 35%;
-  width: 30%;
+/* .screen {
+  display: flex;
+  margin-top: -60%;
+  margin-left: -30%;
+  width: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border: 1px solid rgb(255, 255, 255);
-}
+} */
 
+
+.btn {
+  display: flex;
+  margin-left: -40%;
+  margin-top: 7%;
+}
 
 .row1 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 150%;
-  left: 50%;
+  margin-left: -84.5%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .row2 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 155%;
-  left: 50%;
+  margin-left: -90%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .row3 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 160%;
-  left: 50%;
+  margin-left: -94%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .row4 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 165%;
-  left: 50%;
+  margin-left: -94%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .row5 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 170%;
-  left: 50%;
+  margin-left: -94%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .row6 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 175%;
-  left: 50%;
+  margin-left: -94%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .row7 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 180%;
-  left: 50%;
+  margin-left: -103%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
@@ -119,12 +107,10 @@ td:hover {
 
 .row8 {
   display: flex;
-  margin: 0;
-  position: absolute;
-  top: 185%;
-  left: 50%;
+  margin-left: -103%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  margin-bottom: 100%;
 }
 
 
@@ -155,11 +141,8 @@ td:hover {
 }
 
 
-.btn {
-  position: absolute;
-  left: 90%;
-  top: 180%;
-}
+
+
 
 .disabledseats {
   background-color: rgb(87, 87, 87);
@@ -184,18 +167,8 @@ td:hover {
   color: white;
   margin-top: 200px;
   margin-left: 30%;
+  margin-bottom: 10%;
   height: 250px !important;
   overflow: scroll;
   overflow-x: hidden;
-}
-
-#span4 {
-  width: 560px;
-  height: 315px;
-  display: block;
-  width: 50%;
-  color: white;
-  margin-top: 200px;
-  margin-left: 30%;
-
 }

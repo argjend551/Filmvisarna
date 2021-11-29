@@ -2,7 +2,6 @@
 function biljetter() {
   
      $('main').html(`
-  <div id="span4"></div>
    <div id="span3">
 <select id="mySelect">
      <option value="0">Välj film</option>
@@ -39,8 +38,8 @@ function biljetter() {
 
 
  <div class="cinema">
-          <div class="screen"></div>
 
+          <div class="col-12 col-sm-6 col-lg-3">
                <div class="row1"></div>
                <div class="row2"></div>
                <div class="row3"></div>
@@ -49,9 +48,12 @@ function biljetter() {
                <div class="row6"></div>
                <div class="row7"></div>
                <div class="row8"></div>
+          </div>
           <button type="button" class="btn btn-success">Book</button>
 
      </div>
+
+
   `);
   filterfilm();
   displayFilms();

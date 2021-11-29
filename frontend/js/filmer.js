@@ -41,7 +41,6 @@ function filmer(id) {
 
 
  <div class="cinema">
-          <div class="screen"></div>
 
           <div class="col-12 col-sm-6 col-lg-3">
                <div class="row1"></div>

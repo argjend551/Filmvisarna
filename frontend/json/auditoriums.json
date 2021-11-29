@@ -17,14 +17,14 @@
   {
     "id": 2,
     "name": "Lilla Salongen",
-    "seats": 56,
+    "seats": 57,
     "seatsPerRow": [
-      7,
       8,
       9,
       10,
       10,
-      12
+      10,
+      10
     ]
   }
 ]
