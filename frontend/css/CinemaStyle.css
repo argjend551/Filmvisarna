@@ -31,14 +31,13 @@ td:hover {
 }
 
 #cinema {
-
-  margin-top: 1000px;
+  margin-top: 800px;
 }
 
 .screen {
-  
+
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 35%;
   width: 30%;
   border: 1px solid rgb(255, 255, 255);

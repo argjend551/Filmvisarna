@@ -3,10 +3,9 @@
      max-width: 150px; */
 
      position: absolute;
-
-     height: 62px;
+     height: auto;
      width: 100px;
-     top: -6px;
+     top: -6px; 
 }
 
 .navbar-collapse {
