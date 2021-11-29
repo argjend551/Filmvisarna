@@ -23,7 +23,7 @@ async function book(showId, seats) {
 
   function makeid(length) {
     var result = '';
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var charactersLength = characters.length;
     result = characters.charAt(Math.floor(Math.random() *
       charactersLength));
@@ -130,6 +130,7 @@ function seatsFunction(a) {
     console.log(showid);
     if (selectedSeats.length > 0) {
       book(showid, [...selectedSeats]);
+      window.bokningsbekraftelse();
       selectedSeats = [];
     }
     $(".row1").empty();
