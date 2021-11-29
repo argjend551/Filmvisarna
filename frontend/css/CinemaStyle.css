@@ -31,14 +31,13 @@ td:hover {
 }
 
 #cinema {
-
-  margin-top: 1000px;
+  margin-top: 800px;
 }
 
 .screen {
-  
+
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 35%;
   width: 30%;
   border: 1px solid rgb(255, 255, 255);
@@ -49,7 +48,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -59,7 +58,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 65%;
+  top: 80%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -69,7 +68,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -79,7 +78,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 75%;
+  top: 90%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -89,7 +88,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 80%;
+  top: 95%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -99,7 +98,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 85%;
+  top: 100%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -109,7 +108,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 90%;
+  top: 105%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -120,7 +119,7 @@ td:hover {
   display: flex;
   margin: 0;
   position: absolute;
-  top: 95%;
+  top: 110%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
