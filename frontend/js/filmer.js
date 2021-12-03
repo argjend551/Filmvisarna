@@ -38,16 +38,9 @@ function filmer(id) {
 
 
  <div class="cinema" >
-<div class="col-4" >
-          <div class="col-12 col-sm-6 col-lg-3">
-               <div class="row1"></div>
-               <div class="row2"></div>
-               <div class="row3"></div>
-               <div class="row4"></div>
-               <div class="row5"></div>
-               <div class="row6"></div>
-               <div class="row7"></div>
-               <div class="row8"></div>
+<div class="col-12" >
+          <div class="all-seats">
+
           </div>
           <button type="button" class="btn btn-success">Book</button>
 </div>
