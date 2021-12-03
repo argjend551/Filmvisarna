@@ -1,6 +1,7 @@
 //Content for the bokningsbekraftelse view
 
-//let booking = data.bookings.find(x => x.id === (data.bookings.length - 1));
+//Reads information from bookings.json and shows.json and prints it out in 
+//the booking confirmation
 
 function bokningsbekraftelse() {
   let booking = data.bookings[data.bookings.length - 1];
