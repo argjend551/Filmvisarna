@@ -81,11 +81,11 @@ function freeSeats(showId) {
   }
   // if seatNumber is higher than 80 send all array values to 'storaSalong'
   if (seatNumber > 80) {
-    storaSalong(seats[0], seats[1], seats[2], seats[3], seats[4], seats[5], seats[6], seats[7]);
+    storaSalong(seats);
 
     // if its not bigger than 80 send array values to 'lillaSalong'
   } else {
-    lillaSalong(seats[0], seats[1], seats[2], seats[3], seats[4], seats[5]);
+    lillaSalong(seats);
 
   }
 
@@ -146,84 +146,34 @@ function seatsFunction(a) {
 }
 
 
-//Function that creates a button for every row and seat in the auditiorium 'storaSalong'
-//.row1.append grabs the class and creates buttons for row1
-// a[i] gives the value of the position in the array(seatnumber)
-function storaSalong(a, b, c, d, e, f, g, h) {
-  
-  for (var i = 0; i < a.length; i++) {
-
-    $('.row1').append('<div class="seats" value=' + a[i] + '>' + a[i] +
-      '</div>');
+function storaSalong(seats) {
+  let html = '';
+  for (let row of seats) {
+    html += '<div class="crow">'
+    for (let seat of row) {
+      html += '<div class="seats" value=' + seat + '>' + seat + '</div>';
+    }
+    html += '</div>';
   }
-  for (var i = 0; i < b.length; i++) {
-    $('.row2').append('<div class="seats"value=' + b[i] + '>' + b[i] +
-      '</div>');
-  }
-  for (var i = 0; i < c.length; i++) {
-    $('.row3').append('<div class="seats"value=' + c[i] + '>' + c[i] +
-      '</div>');
-  }
-  for (var i = 0; i < d.length; i++) {
-    $('.row4').append('<div class="seats"value=' + d[i] + '>' + d[i] +
-      '</div>');
-  }
-  for (var i = 0; i < e.length; i++) {
-    $('.row5').append('<div class="seats" value=' + e[i] + '>' + e[i] +
-      '</div>');
-  }
-  for (var i = 0; i < f.length; i++) {
-    $('.row6').append('<div class="seats" value=' + f[i] + '>' + f[i] +
-      '</div>');
-  }
-
-  for (var i = 0; i < g.length; i++) {
-    $('.row7').append('<div class="seats" value=' + g[i] + '>' + g[i] +
-      '</div>');
-  }
-  for (var i = 0; i < h.length; i++) {
-    $('.row8').append('<div class="seats" value=' + h[i] + '>' + h[i] +
-      '</div>');
-  }
-
+  $('.all-seats').html(html);
+  // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
+ // then we disable the buttons so you cannot press them.
   $('[value="X"]').attr('class', 'disabledseats');
   $(".disabledseats").attr("disabled", "disabled");
-
 }
 
-//Function that creates a button for every row and seat in the auditiorium 'lillaSalong'
-//.row1.append grabs the class and creates buttons for row1
-// a[i] gives the value of the position in the array(seatnumber)
-function lillaSalong
-  (a, b, c, d, e, f) {
-  for (var i = 0; i < a.length; i++) {
-    $('.row1').append('<div class="seats" value=' + a[i] + '>' + a[i] +
-      '</div>');
+function lillaSalong(seats) {
+  let html = '';
+  for (let row of seats) {
+    html += '<div class ="crow">'
+    for (let seat of row) {
+     html += '<div class="seats" value=' + seat + '>' + seat + '</div>';
+;
+    }
+    html += '</div>';
   }
-  for (var i = 0; i < b.length; i++) {
-    $('.row2').append('<div class="seats"value=' + b[i] + '>' + b[i] +
-      '</div>');
-  }
-  for (var i = 0; i < c.length; i++) {
-    $('.row3').append('<div class="seats"value=' + c[i] + '>' + c[i] +
-      '</div>');
-  }
-  for (var i = 0; i < d.length; i++) {
-    $('.row4').append('<div class="seats"value=' + d[i] + '>' + d[i] +
-      '</div>');
-  }
-  for (var i = 0; i < e.length; i++) {
-    $('.row5').append('<div class="seats" value=' + e[i] + '>' + e[i] +
-      '</div>');
-  }
-  for (var i = 0; i < f.length; i++) {
-    $('.row6').append('<div class="seats" value=' + f[i] + '>' + f[i] +
-      '</div>');
-  }
-
-
-
-  // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
+  $('.all-seats').html(html);
+    // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
   // then we disable the buttons so you cannot press them.
   $('[value="X"]').attr('class', 'disabledseats');
   $(".disabledseats").attr("disabled", "disabled");

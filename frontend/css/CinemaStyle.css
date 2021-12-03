@@ -1,7 +1,8 @@
 * {
   font-size: 15px;
   align-items: center;
-  font-weight: 700;
+  font-weight: 600;
+
 }
 
 
@@ -22,20 +23,25 @@ hr {
   left: 72%;
 }
 
-th {
+td {
   cursor: pointer;
 }
 
-td:hover {
-  background-color: red;
+.table-hover>tbody>tr:hover {
+  background-color: white;
 }
 
+
 .cinema {
-  margin-top: 80px;
-  margin-left: 580px;
-  display: flex;
+  min-width: 350px;
+  max-width: 100%;
+  /*margin-left: 50%;*/
   justify-content: center;
   align-items: center;
+}
+
+.crow {
+  text-align: center;
 }
 
 /* .screen {
@@ -50,93 +56,40 @@ td:hover {
 
 
 .btn {
+
   display: flex;
-  margin-left: -40%;
   margin-top: 7%;
-}
-
-.row1 {
-  display: flex;
-  margin-left: -84.5%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row2 {
-  display: flex;
-  margin-left: -90%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row3 {
-  display: flex;
-  margin-left: -94%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row4 {
-  display: flex;
-  margin-left: -94%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row5 {
-  display: flex;
-  margin-left: -94%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row6 {
-  display: flex;
-  margin-left: -94%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.row7 {
-  display: flex;
-  margin-left: -103%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-}
-
-.row8 {
-  display: flex;
-  margin-left: -103%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-bottom: 100%;
 }
 
 
 
 .seats {
+  display: inline-block;
   background-color: rgb(184, 16, 16);
-  padding: 15px 18px;
-  display: flex;
-  height: 10px;
-  width: 1px;
+  padding: 10px;
+  /*display: flex;*/
+  /*height: 10px;*/
+  width: 32px;
   margin: 3px;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   cursor: pointer;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .selected-seat {
+  display: inline-block;
   background-color: rgb(2, 243, 2);
-  padding: 15px 18px;
-  display: flex;
-  height: 10px;
-  width: 1px;
+  padding: 10px;
+  /*display: flex;*/
+  /*height: 10px;*/
+  width: 32px;
   margin: 3px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  cursor: pointer;
+  /*align-items: center;*/
+
   cursor: pointer;
 }
 
@@ -145,14 +98,17 @@ td:hover {
 
 
 .disabledseats {
+  display: inline-block;
   background-color: rgb(87, 87, 87);
-  padding: 15px 18px;
-  display: flex;
-  height: 10px;
-  width: 1px;
+  padding: 10px;
+  /*display: flex;*/
+  /*height: 10px;*/
+  width: 32px;
   margin: 3px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  /*align-items: center;*/
+
 }
 
 
