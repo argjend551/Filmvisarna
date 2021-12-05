@@ -17,10 +17,7 @@ function findById(type, id) {
 }
 
 async function start() {
-  //console.log(findById('auditoriums', 2));
-  //console.log(await book(2, [30, 80, 81]));
-  //freesats and show number in parameter
-  //Run hem() if the Url has #hem or just # to get it to the hem-view.
+  
   if (location.hash == 'hem' || location.hash == '') {
     hem();
   }
@@ -28,7 +25,7 @@ async function start() {
   else {
     reactOnHashChange();
   }
- 
+
   // myBook();
 
 

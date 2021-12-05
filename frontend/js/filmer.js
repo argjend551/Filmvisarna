@@ -19,7 +19,7 @@ function filmer(id) {
    <div id="span3">
 
 
-     <table class="table">
+     <table class="table table-hover">
           <thead>
                <tr>
                     <th scope="col">Film</th>
@@ -28,10 +28,7 @@ function filmer(id) {
 
                </tr>
           </thead>
-          <tbody>
-               <th class="film"></th>
-               <th class="datum"></th>
-               <th class="salong"></th>
+          <tbody class="table">
 
           </tbody>
      </table>
@@ -40,22 +37,14 @@ function filmer(id) {
 </div>
 
 
- <div class="cinema">
+ <div class="cinema" >
+<div class="col-12" >
+          <div class="all-seats">
 
-          <div class="col-12 col-sm-6 col-lg-3">
-               <div class="row1"></div>
-               <div class="row2"></div>
-               <div class="row3"></div>
-               <div class="row4"></div>
-               <div class="row5"></div>
-               <div class="row6"></div>
-               <div class="row7"></div>
-               <div class="row8"></div>
           </div>
           <button type="button" class="btn btn-success">Book</button>
-
+</div>
      </div>
-
 
 
 

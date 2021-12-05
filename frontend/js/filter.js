@@ -1,20 +1,20 @@
 let showid;
-var items = [];
 // This function allows us to filter the shows.js and find the specific shows for the film we want to find
 function findByfilm(type, film) {
 
      let ar;
      ar = data[type].filter(x => x.film === film);
      console.log(ar);
+     let shows = [];
      for (let show of ar) {
-          $('.film').append("<tr><td class=" + show.id + ">" + show.film + "</td></hr></tr>");
-          $('.datum').append("<tr><td class=" + show.id + ">" + show.date + "</td></tr>");
-          $('.salong').append("<tr><td class=" + show.id + ">" + show.auditorium + "</td></tr>");
-
+          shows.push("<tr>");
+          shows.push("<td class=" + show.id + ">" + show.film + "</td>");
+          shows.push("<td class=" + show.id + ">" + ' kl: ' + show.time+ ' ' + show.date + "</td>");
+          shows.push("<td class=" + show.id + ">" + show.auditorium + "</td>");
+          shows.push("</tr>");
      }
-
+     $("<tbody/>", { "class": "mydata", html: shows.join("") }).appendTo("table");
      // this function sends the id of the film you click to the method choice
-     items.push("</tr>");
 
      $("td").click(function () {
           showid = parseInt($(this).closest('td').attr('class'));
@@ -41,13 +41,15 @@ function findByfilm(type, film) {
 // this method prints out all the shows in the table at start
 function displayFilms(type) {
 
-
+     let shows = [];
      for (let show of data.shows) {
-          $('.film').append("<tr><td class=" + show.id + ">" + show.film + "</td></hr></tr>");
-          $('.datum').append("<tr><td class=" + show.id + ">" + show.date + "</td></tr>");
-          $('.salong').append("<tr><td class=" + show.id + ">" + show.auditorium + "</td></tr>");
-
+          shows.push("<tr>");
+          shows.push("<td class=" + show.id + ">" + show.film + "</td>");
+          shows.push("<td class=" + show.id + ">" + ' kl: ' + show.time + ' ' + show.date + "</td>");
+          shows.push("<td class=" + show.id + ">" + show.auditorium + "</td>");
+          shows.push("</tr>");
      }
+     $("<tbody/>", { "class": "mydata", html: shows.join("") }).appendTo("table");
      $("td").click(function () {
 
           showid = parseInt($(this).closest('td').attr('class'));
@@ -76,50 +78,50 @@ function filterfilm(a) {
 
 
           if (value == 0) {
-               $(".film").empty();
-               $(".datum").empty();
-               $(".salong").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
                displayFilms();
           }
 
           if (value == 1) {
-               $(".film").empty();
-               $(".datum").empty();
-               $(".salong").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
                findByfilm('shows', "White Chicks");
 
           }
           if (value == 2) {
-               $(".film").empty();
-               $(".datum").empty();
-               $(".salong").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
                findByfilm('shows', "Deadpool");
           }
           if (value == 3) {
-               $(".film").empty();
-               $(".datum").empty();
-               $(".salong").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
                findByfilm('shows', "Tio Orsaker Att Hata Dig");
 
           }
           if (value == 4) {
-               $(".film").empty();
-               $(".datum").empty();
-               $(".salong").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
                findByfilm('shows', "Bad Boys");
 
           }
           if (value == 5) {
-               $(".film").empty();
-               $(".datum").empty();
-               $(".salong").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
                findByfilm('shows', "No Time to Die");
 
           }
           if (value == 6) {
-               $(".film").empty();
-               $(".datum").empty();
-               $(".salong").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
                findByfilm('shows', "UPP");
 
           }
