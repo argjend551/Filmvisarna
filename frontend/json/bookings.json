@@ -533,17 +533,180 @@
     ]
   },
   {
-    "id": "X5442",
-    "showId": 2,
+    "id": "O6248",
+    "showId": 23,
     "seats": [
-      39
-    ]
+      {
+        "number": 1,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 2,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 160
   },
   {
-    "id": "K3219",
-    "showId": 3,
+    "id": "N2736",
+    "showId": 2,
     "seats": [
-      31
-    ]
+      {
+        "number": 42,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 41,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
+  },
+  {
+    "id": "J5770",
+    "showId": 25,
+    "seats": [
+      {
+        "number": 31,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 21,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 20,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 255
+  },
+  {
+    "id": "S3279",
+    "showId": 25,
+    "seats": [
+      {
+        "number": 31,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 30,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 40,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 255
+  },
+  {
+    "id": "P3819",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 34,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 44,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 160
+  },
+  {
+    "id": "A9206",
+    "showId": 2,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "S8761",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 24,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 23,
+        "type": "Barn",
+        "price": "65"
+      },
+      {
+        "number": 22,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 225
+  },
+  {
+    "id": "J7063",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 19,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 85
+  },
+  {
+    "id": "R9008",
+    "showId": 1,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "I1280",
+    "showId": 1,
+    "seats": [
+      {
+        "number": 32,
+        "type": "Barn",
+        "price": "65"
+      }
+    ],
+    "totalPrice": 65
+  },
+  {
+    "id": "X3127",
+    "showId": 29,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "Q1918",
+    "showId": 29,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "X2380",
+    "showId": 29,
+    "seats": [
+      {
+        "number": 3,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 85
   }
 ]
