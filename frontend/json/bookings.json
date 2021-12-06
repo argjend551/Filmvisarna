@@ -815,5 +815,22 @@
       }
     ],
     "totalPrice": 225
+  },
+  {
+    "id": "R1011",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 44,
+        "type": "Barn",
+        "price": "65"
+      },
+      {
+        "number": 43,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 140
   }
 ]

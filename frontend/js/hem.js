@@ -2,29 +2,40 @@
 // Content for the start/hem page
 function hem() {
   $('main').html(`
-  
- <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="true">
+<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="1000">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="Filmer-images/bad-boys-2.jpg" class="d-block w-100" alt="bad-boys-2.jpg">
+    <div class="carousel-item active" data-bs-interval="4000">
+    <img src="Filmer-images/dead-pool-2.jpg" class="d-block w-100" max-width="460" height="auto" alt="dead-pool-2.jpg">
     </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="Filmer-images/bad-boys-2.jpg" class="d-block w-100" alt="bad-boys-2.jpg">
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="Filmer-images/bad-boys-2.jpg" class="d-block w-100" max-width="460" height="auto" alt="bad-boys-2.jpg">
     </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="Filmer-images/bad-boys-2.jpg" class="d-block w-100" alt="bad-boys-2.jpg">
+    <div class="carousel-item" data-bs-interval="4000">
+         <img src="Filmer-images/10-things-i-hate-about-you-2.png" class="d-block w-100" max-width="460" height="auto"  alt="Filmer-images/10-things-i-hate-about-you-2.png">
+    </div>
+     <div class="carousel-item" data-bs-interval="4000">
+      <img src="Filmer-images/No-time-to-die-2.jpg" class="d-block w-100" max-width="460" height="auto"  alt="No-time-to-die-2.jpg">
+    </div>
+     <div class="carousel-item" data-bs-interval="4000">
+      <img src="Filmer-images/up-2.jpg" class="d-block w-100" max-width=" 460" height="auto"  alt="up-2.jpg">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="Filmer-images/white-chicks-2.jpg" class="d-block w-100" max-width=" 460" height="auto"  alt="white-chicks-2.jpg">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
 
+
+
+ 
 `);
   let html = '';
 

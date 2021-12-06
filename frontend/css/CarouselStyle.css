@@ -11,7 +11,8 @@
   position: absolute;
   width: 100%;
   padding-top: 0%;
-  height: 100%;
+  height: auto;
+  
 }
 main {
 padding-top: 70px;
