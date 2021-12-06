@@ -12,11 +12,11 @@ function bokningsbekraftelse() {
 
   let seats = `<div> `;
   booking.seats.forEach(seat => {
-      seats += `
+    seats += `
         <hr>
-              <h3> Seat Number : ${seat.number}</h3>
-              <h4>  Type  : ${seat.type} </h4>
-              <h4> price : ${seat.price} </h4>
+              <h3> Stolsnummer: ${seat.number}</h3>
+              <h4>  Biljettyp: ${seat.type} </h4>
+              <h4> Pris: ${seat.price} kr </h4>
         <hr>
               `;
   })
@@ -26,14 +26,14 @@ function bokningsbekraftelse() {
 
   //Add bokning inf in the report 
   $('main').html(`
-<div class="booking"><u><h1>Bokningsbekräftelse</h1></u>
-<h1>${show.film}<h1>
-<h3>${show.auditorium}<br>${show.date}<br>Kl: ${show.time}<br>Stolsnummer:</h3>
+<div class="booking"><h1>Boknings&shy;bekräftelse</h1>
+<br><h2>${show.film}</h2>
+<h4>${show.auditorium}<br>${show.date}<br>Kl: ${show.time}<br></h4>
 <!-- //  -->
 ${seats}
 <br>
-<h2>Total price: ${booking.totalPrice}</h2>
-<h2>Bokningsnummer: ${booking.id}</h2>
+<h2>Totalt: ${booking.totalPrice} kr</h2>
+<h3>Bokningsnummer: ${booking.id}</h3>
 </div>
   `);
 

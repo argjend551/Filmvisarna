@@ -21,6 +21,7 @@ function biljetter() {
                <tr>
                     <th scope="col">Film</th>
                     <th scope="col">Datum</th>
+                     <th scope="col">Tid</th>
                     <th scope="col">Salong</th>
 
                </tr>
@@ -39,7 +40,7 @@ function biljetter() {
           <div class="all-seats">
                
           </div>
-          <button type="button" class="btn btn-success">Book</button>
+          <button type="button" disabled class="btn btn-success">Boka</button>
 </div>
      </div>
 

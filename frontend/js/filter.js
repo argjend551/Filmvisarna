@@ -9,7 +9,8 @@ function findByfilm(type, film) {
      for (let show of ar) {
           shows.push("<tr>");
           shows.push("<td class=" + show.id + ">" + show.film + "</td>");
-          shows.push("<td class=" + show.id + ">" + ' kl: ' + show.time+ ' ' + show.date + "</td>");
+          shows.push("<td class=" + show.id + ">" + show.date + "</td>");
+          shows.push("<td class=" + show.id + ">" + show.time + "</td>");
           shows.push("<td class=" + show.id + ">" + show.auditorium + "</td>");
           shows.push("</tr>");
      }
@@ -18,14 +19,6 @@ function findByfilm(type, film) {
 
      $("td").click(function () {
           showid = parseInt($(this).closest('td').attr('class'));
-          $(".row1").empty();
-          $(".row2").empty();
-          $(".row3").empty();
-          $(".row4").empty();
-          $(".row5").empty();
-          $(".row6").empty();
-          $(".row7").empty();
-          $(".row8").empty();
           console.log(showid);
           freeSeats(showid);
           seatsFunction(showid);
@@ -45,7 +38,8 @@ function displayFilms(type) {
      for (let show of data.shows) {
           shows.push("<tr>");
           shows.push("<td class=" + show.id + ">" + show.film + "</td>");
-          shows.push("<td class=" + show.id + ">" + ' kl: ' + show.time + ' ' + show.date + "</td>");
+          shows.push("<td class=" + show.id + ">" + show.date + "</td>");
+          shows.push("<td class=" + show.id + ">" + show.time + "</td>");
           shows.push("<td class=" + show.id + ">" + show.auditorium + "</td>");
           shows.push("</tr>");
      }
@@ -54,15 +48,6 @@ function displayFilms(type) {
 
           showid = parseInt($(this).closest('td').attr('class'));
           console.log(showid);
-          $(".row1").empty();
-          $(".row2").empty();
-          $(".row3").empty();
-          $(".row4").empty();
-          $(".row5").empty();
-          $(".row6").empty();
-          $(".row7").empty();
-          $(".row8").empty();
-
           freeSeats(showid);
           seatsFunction(showid);
      });

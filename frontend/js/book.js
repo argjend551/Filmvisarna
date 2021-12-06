@@ -128,16 +128,18 @@ function seatsFunction(a) {
   let selectedSeats = [];
   // if you click on a seat displayed on the screen,
   // change the class attribute to selected-seats and push the array index you pressed to array selectedSeats
-  $('.seats').click(function() {
-      if ($(this).attr("class") == "seats") {
-          $(this).addClass('selected-seat');
-          let a = parseInt($(this).text());
-          selectedSeats.push(a);
-          console.log(selectedSeats);
-      } else {
-          // if you click on a selected-seat ,
-          // change the class attribute back to seats and splice/remove the value you pressed from the array
-          $(this).removeClass('selected-seat');
+  $('.seats').click(function () {
+    if ($(this).attr("class") == "seats") {
+      $(this).addClass('selected-seat');
+      let clickedSeats = parseInt($(this).text());
+      selectedSeats.push(clickedSeats);
+      console.log(selectedSeats);
+    }
+
+    else {
+      // if you click on a selected-seat ,
+      // change the class attribute back to seats and splice/remove the value you pressed from the array
+      $(this).removeClass('selected-seat');
 
           for (var i = 0; i < selectedSeats.length; i++) {
               let removeSelect = parseInt($(this).text());
@@ -149,6 +151,13 @@ function seatsFunction(a) {
 
           }
       }
+
+    // the button book is disabled, but if you click on a seat it will become enabled.
+    if (selectedSeats.length > 0) {
+      $(".btn").removeAttr("disabled");
+    } else {
+      $(".btn").attr("disabled", true);
+    }
 
 
 
@@ -260,7 +269,7 @@ function storaSalong(seats) {
   }
   $('.all-seats').html(html);
   // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
- // then we disable the buttons so you cannot press them.
+  // then we disable the buttons so you cannot press them.
   $('[value="X"]').attr('class', 'disabledseats');
   $(".disabledseats").attr("disabled", "disabled");
 }
@@ -270,13 +279,13 @@ function lillaSalong(seats) {
   for (let row of seats) {
     html += '<div class ="crow">'
     for (let seat of row) {
-     html += '<div class="seats" value=' + seat + '>' + seat + '</div>';
-;
+      html += '<div class="seats" value=' + seat + '>' + seat + '</div>';
+      ;
     }
     html += '</div>';
   }
   $('.all-seats').html(html);
-    // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
+  // if a seat is booked it will get the value X, and here we give all button that have the value X an class 'disabledseats'
   // then we disable the buttons so you cannot press them.
   $('[value="X"]').attr('class', 'disabledseats');
   $(".disabledseats").attr("disabled", "disabled");
