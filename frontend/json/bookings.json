@@ -793,5 +793,27 @@
       }
     ],
     "totalPrice": 160
+  },
+  {
+    "id": "D9329",
+    "showId": 45,
+    "seats": [
+      {
+        "number": 52,
+        "type": "Barn",
+        "price": "65"
+      },
+      {
+        "number": 62,
+        "type": "Pensionär",
+        "price": "75"
+      },
+      {
+        "number": 61,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 225
   }
 ]

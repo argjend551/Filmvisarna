@@ -16,7 +16,7 @@ function bokningsbekraftelse() {
         <hr>
               <h3> Stolsnummer : ${seat.number}</h3>
               <h4>  Typ  : ${seat.type} </h4>
-              <h4> pris : ${seat.price} </h4>
+              <h4> pris : ${seat.price}kr </h4>
         <hr>
               `;
   })
@@ -32,7 +32,7 @@ function bokningsbekraftelse() {
 <!-- //  -->
 ${seats}
 <br>
-<h2>Totalpris: ${booking.totalPrice}</h2>
+<h2>Totalpris: ${booking.totalPrice}kr</h2>
 <h2>Bokningsnummer: ${booking.id}</h2>
 </div>
   `);
