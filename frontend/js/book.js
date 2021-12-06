@@ -110,7 +110,7 @@ function seatsFunction(a) {
 
       },
       {
-          type: "Normal",
+          type: "Vuxen",
           amount: "85"
 
       },
@@ -221,14 +221,14 @@ function seatsFunction(a) {
           `;
           selectedSeats.forEach(function(seat) {
               bodyContent += `
-                <div class=' mb-2' > <h3> Seat : ${seat} </h3>   <div class='p-2'>
+                <div class=' mb-2' > <h3> Stolsnummer : ${seat} </h3>   <div class='p-2'>
               `;
               priceingTypes.forEach(function(pricingType, index) {
 
                   bodyContent += `
                   <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="seat-${seat}" id="btnradio-${index}-${seat}" autocomplete="off"  value=${pricingType.type}>
-                    <label class="btn btn-outline-primary" for="btnradio-${index}-${seat}">${pricingType.type} (${pricingType.amount})</label>
+                    <label class="btn btn-outline-primary" for="btnradio-${index}-${seat}">${pricingType.type} (${pricingType.amount}kr) </label>
                   </div>
                   `;
               });

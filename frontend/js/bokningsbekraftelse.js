@@ -14,9 +14,9 @@ function bokningsbekraftelse() {
   booking.seats.forEach(seat => {
       seats += `
         <hr>
-              <h3> Seat Number : ${seat.number}</h3>
-              <h4>  Type  : ${seat.type} </h4>
-              <h4> price : ${seat.price} </h4>
+              <h3> Stolsnummer : ${seat.number}</h3>
+              <h4>  Typ  : ${seat.type} </h4>
+              <h4> pris : ${seat.price} </h4>
         <hr>
               `;
   })
@@ -32,7 +32,7 @@ function bokningsbekraftelse() {
 <!-- //  -->
 ${seats}
 <br>
-<h2>Total price: ${booking.totalPrice}</h2>
+<h2>Totalpris: ${booking.totalPrice}</h2>
 <h2>Bokningsnummer: ${booking.id}</h2>
 </div>
   `);

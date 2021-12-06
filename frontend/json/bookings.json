@@ -708,5 +708,136 @@
       }
     ],
     "totalPrice": 85
+  },
+  {
+    "id": "K6928",
+    "showId": 11,
+    "seats": [
+      {
+        "number": 20,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 21,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 160
+  },
+  {
+    "id": "W9629",
+    "showId": 11,
+    "seats": [
+      {
+        "number": 27,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 26,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 160
+  },
+  {
+    "id": "A2906",
+    "showId": 4,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "R9088",
+    "showId": 4,
+    "seats": [
+      {
+        "number": 6,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 5,
+        "type": "Barn",
+        "price": "65"
+      }
+    ],
+    "totalPrice": 150
+  },
+  {
+    "id": "W8265",
+    "showId": 4,
+    "seats": [
+      {
+        "number": 63,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 64,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
+  },
+  {
+    "id": "A1899",
+    "showId": 19,
+    "seats": [
+      {
+        "number": 12,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 56,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
+  },
+  {
+    "id": "M1347",
+    "showId": 9,
+    "seats": [
+      {
+        "number": 13,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 15,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
+  },
+  {
+    "id": "J8394",
+    "showId": 9,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "Z8177",
+    "showId": 9,
+    "seats": [
+      {
+        "number": 31,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 32,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 160
   }
 ]
