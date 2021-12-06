@@ -12,6 +12,13 @@ body {
   margin-right: auto;
 }
 
+.poster:hover {
+
+  transform: scale(1.12);
+  transition: all 0.4s;
+}
+
+
 #title {
   color: white;
   text-align: center;
