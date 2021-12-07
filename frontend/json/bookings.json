@@ -1014,5 +1014,28 @@
       }
     ],
     "totalPrice": 150
+  },
+  {
+    "id": "T1662",
+    "showId": 2,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "E6467",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 50,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 51,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
   }
 ]
