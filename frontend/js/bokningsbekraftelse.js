@@ -26,7 +26,7 @@ function bokningsbekraftelse() {
 
   //Add bokning inf in the report 
   $('main').html(`
-<div class="booking"><h1>Bokningsbekräftelse</h1><br>
+<div class="booking"><h1>Boknings&shy;bekräftelse</h1><br>
 <h2>${show.film}<h2>
 <h4>${show.auditorium}<br>${show.date}<br>Kl: ${show.time}<br></h4>
 <!-- //  -->

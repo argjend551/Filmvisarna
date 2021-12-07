@@ -991,5 +991,45 @@
       }
     ],
     "totalPrice": 170
+  },
+  {
+    "id": "E6747",
+    "showId": 6,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "P2786",
+    "showId": 6,
+    "seats": [
+      {
+        "number": 1,
+        "type": "Normal",
+        "price": "85"
+      },
+      {
+        "number": 2,
+        "type": "Barn",
+        "price": "65"
+      }
+    ],
+    "totalPrice": 150
+  },
+  {
+    "id": "P7532",
+    "showId": 1,
+    "seats": [
+      {
+        "number": 15,
+        "type": "Barn",
+        "price": "65"
+      },
+      {
+        "number": 16,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 150
   }
 ]
