@@ -832,5 +832,17 @@
       }
     ],
     "totalPrice": 140
+  },
+  {
+    "id": "H9355",
+    "showId": 3,
+    "seats": [
+      {
+        "number": 51,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 85
   }
 ]
