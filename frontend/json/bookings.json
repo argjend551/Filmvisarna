@@ -88,15 +88,6 @@
     ]
   },
   {
-    "id": "K7196",
-    "showId": 7,
-    "seats": [
-      16,
-      25,
-      26
-    ]
-  },
-  {
     "id": "F9958",
     "showId": 6,
     "seats": [
@@ -915,5 +906,39 @@
       }
     ],
     "totalPrice": 150
+  },
+  {
+    "id": "C5526",
+    "showId": 1,
+    "seats": [
+      {
+        "number": 27,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 26,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
+  },
+  {
+    "id": "P2280",
+    "showId": 4,
+    "seats": [
+      {
+        "number": 6,
+        "type": "Barn",
+        "price": "65"
+      },
+      {
+        "number": 5,
+        "type": "Barn",
+        "price": "65"
+      }
+    ],
+    "totalPrice": 130
   }
 ]
