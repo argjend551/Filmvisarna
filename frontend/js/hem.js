@@ -7,19 +7,19 @@ function hem() {
     <div class="carousel-item active" data-bs-interval="4000">
     <img src="Filmer-images/dead-pool-2.jpg" class="d-block w-100" max-width="460" height="auto" alt="dead-pool-2.jpg">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item">
       <img src="Filmer-images/bad-boys-2.jpg" class="d-block w-100" max-width="460" height="auto" alt="bad-boys-2.jpg">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item">
          <img src="Filmer-images/10-things-i-hate-about-you-2.png" class="d-block w-100" max-width="460" height="auto"  alt="Filmer-images/10-things-i-hate-about-you-2.png">
     </div>
-     <div class="carousel-item" data-bs-interval="4000">
+     <div class="carousel-item">
       <img src="Filmer-images/No-time-to-die-2.jpg" class="d-block w-100" max-width="460" height="auto"  alt="No-time-to-die-2.jpg">
     </div>
-     <div class="carousel-item" data-bs-interval="4000">
+     <div class="carousel-item">
       <img src="Filmer-images/up-2.jpg" class="d-block w-100" max-width=" 460" height="auto"  alt="up-2.jpg">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item">
       <img src="Filmer-images/white-chicks-2.jpg" class="d-block w-100" max-width=" 460" height="auto"  alt="white-chicks-2.jpg">
     </div>
   </div>
@@ -33,13 +33,9 @@ function hem() {
   </button>
 </div>
 
-
-
  
 `);
   let html = '';
-
-
   var newdiv = document.createElement('div');
   newdiv.className = 'row';
 
@@ -52,5 +48,10 @@ function hem() {
   }
   //console.log('html är:' + html.innerHTML);
   $('main').append(newdiv);
+}
+loadCarousel()
+async function loadCarousel() {
+  let myCarousel = await $('#carouselExampleInterval');
+  console.log(myCarousel)
 }
 

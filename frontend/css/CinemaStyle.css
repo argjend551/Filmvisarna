@@ -2,11 +2,11 @@
   font-size: 15px;
   align-items: center;
   font-weight: 600;
-
 }
 
 hr {
   color: white;
+  
 }
 
 #mySelect {
@@ -52,13 +52,10 @@ td {
   border: 1px solid rgb(255, 255, 255);
 } */
 
-
 .boka {
   /*margin-left: 48.5%;*/
   margin-top: 5%;
 }
-
-
 
 .seats {
   display: inline-block;
@@ -86,13 +83,8 @@ td {
   border-top-right-radius: 11px;
   cursor: pointer;
   /*align-items: center;*/
-
   cursor: pointer;
 }
-
-
-
-
 
 .disabledseats {
   display: inline-block;
@@ -108,10 +100,11 @@ td {
 
 }
 
-
-
 .table {
   color: white;
+  background-color:rgb(87, 87, 87);
+  border-radius: 8px;
+  
 }
 
 #span3 {
