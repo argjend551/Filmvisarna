@@ -844,5 +844,76 @@
       }
     ],
     "totalPrice": 85
+  },
+  {
+    "id": "A3949",
+    "showId": 62,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "G6783",
+    "showId": 62,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "J1732",
+    "showId": 62,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "T3056",
+    "showId": 62,
+    "seats": [
+      {
+        "number": 9,
+        "type": "Barn",
+        "price": "65"
+      }
+    ],
+    "totalPrice": 65
+  },
+  {
+    "id": "O3800",
+    "showId": 79,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "R6956",
+    "showId": 79,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "X2983",
+    "showId": 79,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "Y6794",
+    "showId": 79,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "N7632",
+    "showId": 79,
+    "seats": [
+      {
+        "number": 1,
+        "type": "Barn",
+        "price": "65"
+      },
+      {
+        "number": 2,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 150
   }
 ]
