@@ -1014,22 +1014,5 @@
       }
     ],
     "totalPrice": 150
-  },
-  {
-    "id": "P7532",
-    "showId": 1,
-    "seats": [
-      {
-        "number": 15,
-        "type": "Barn",
-        "price": "65"
-      },
-      {
-        "number": 16,
-        "type": "Vuxen",
-        "price": "85"
-      }
-    ],
-    "totalPrice": 150
   }
 ]
