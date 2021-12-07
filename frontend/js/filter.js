@@ -2,11 +2,11 @@ let showid;
 // This function allows us to filter the shows.js and find the specific shows for the film we want to find
 function findByfilm(type, film) {
 
-     let ar;
-     ar = data[type].filter(x => x.film === film);
-     console.log(ar);
+     let films;
+     films = data[type].filter(x => x.film === film);
+     console.log(films);
      let shows = [];
-     for (let show of ar) {
+     for (let show of films) {
           shows.push("<tr>");
           shows.push("<td class=" + show.id + ">" + show.film + "</td>");
           shows.push("<td class=" + show.id + ">" + show.date + "</td>");
@@ -27,12 +27,34 @@ function findByfilm(type, film) {
 
 
 }
+function findbyAge(type, age) {
+
+     let films;
+     films = data[type].filter(x => x.ageRestrictions === age);
+     console.log(films);
+     let shows = [];
+     for (let show of films) {
+          findByfilm('shows', show.title);
+     }
+     $("<tbody/>", { "class": "mydata", html: shows.join("") }).appendTo("table");
+     // this function sends the id of the film you click to the method choice
+
+     $("td").click(function () {
+          showid = parseInt($(this).closest('td').attr('class'));
+          console.log(showid);
+          freeSeats(showid);
+          seatsFunction(showid);
+     });
+
+
+
+}
 
 
 
 
 // this method prints out all the shows in the table at start
-function displayFilms(type) {
+function displayFilms() {
 
      let shows = [];
      for (let show of data.shows) {
@@ -56,7 +78,7 @@ function displayFilms(type) {
 }
 
 // this method filters the film you choose in the selector
-function filterfilm(a) {
+function filterfilm() {
      $('#mySelect').change(function () {
           var value = $(this).val();
           console.log(value);
@@ -111,6 +133,39 @@ function filterfilm(a) {
 
           }
      });
+
+
+     $('#mySelect1').change(function () {
+          var value = $(this).val();
+          console.log(value);
+
+
+          if (value == 0) {
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               displayFilms();
+          }
+
+          if (value == 1) {
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               console.log(findbyAge('filmer', '7'));
+
+          }
+          if (value == 2) {
+               $("tbody").empty();
+               $("tbody").empty();
+               $("tbody").empty();
+               findbyAge('filmer', '15');
+          }
+         
+     });
+
+
+
+
 }
 
 

@@ -43,7 +43,7 @@ function filmer(id) {
           <div class="all-seats">
 
           </div>
-                    <button type="button" disabled class="btn btn-success">Boka</button>
+                   <button type="button" disabled class="btn btn-success btn3">Boka</button>
 
 </div>
      </div>

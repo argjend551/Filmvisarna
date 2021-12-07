@@ -5,15 +5,20 @@ function biljetter() {
    <div id="span3">
 <select id="mySelect">
      <option value="0">Välj film</option>
-     <option value="1">White Chicks</option>
-     <option value="2">Deadpool</option>
-     <option value="3">Tio Orsaker Att Hata Dig</option>
-     <option value="4">Bad Boys</option>
-     <option value="5">No Time to Die</option>
-     <option value="6">UPP</option>
+     <option value="1">${data.filmer[0].title}</option>
+     <option value="2">${data.filmer[2].title}</option>
+     <option value="3">${data.filmer[1].title}</option>
+     <option value="4">${data.filmer[4].title}</option>
+     <option value="5">${data.filmer[3].title}</option>
+     <option value="6">${data.filmer[5].title}</option>
 </select>
 
+<select id="mySelect1">
+ <option value="0">Ålder</option>
+     <option value="1">7-14</option>
+     <option value="2">15+</option>
 
+</select>
 
 
      <table class="table table-hover">
@@ -40,7 +45,7 @@ function biljetter() {
           <div class="all-seats">
                
           </div>
-          <button type="button" disabled class="btn btn-success">Boka</button>
+          <button type="button" disabled class="btn btn-success btn3">Boka</button>
 </div>
      </div>
 

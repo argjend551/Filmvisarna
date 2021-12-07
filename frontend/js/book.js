@@ -11,7 +11,7 @@ async function book(showId, totalPrice, seats) {
 
   // We have got an error from freeSeats, just return it
   if (typeof availableSeats === 'string') {
-      return availableSeats;
+    return availableSeats;
   }
 
   // Flatten available seats to ONE array (instead of having separate rows)
@@ -19,30 +19,30 @@ async function book(showId, totalPrice, seats) {
 
   // Check that all the seats we want to book are available
   for (let seat of seats) {
-      // Hisham 
-      // before  seat  after seat.number
-      //  
-      if (!availableSeats.includes(seat.number)) {
-          return "Could not perform booking. Seat " + seat.number + " not available";
-      }
+    // Hisham 
+    // before  seat  after seat.number
+    //  
+    if (!availableSeats.includes(seat.number)) {
+      return "Could not perform booking. Seat " + seat.number + " not available";
+    }
   }
 
   function makeid(length) {
-      var result = '';
-      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      var charactersLength = characters.length;
-      result = characters.charAt(Math.floor(Math.random() *
-          charactersLength));
-      return result;
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var charactersLength = characters.length;
+    result = characters.charAt(Math.floor(Math.random() *
+      charactersLength));
+    return result;
   }
 
   // Create a new booking
   let booking = {
-      id: makeid(1) + (Math.floor(Math.random() * 8999) + 1000),
-      showId,
-      seats,
-      //
-      totalPrice
+    id: makeid(1) + (Math.floor(Math.random() * 8999) + 1000),
+    showId,
+    seats,
+    //
+    totalPrice
   };
 
   // Add the booking to the existing bookings
@@ -105,22 +105,21 @@ function seatsFunction(a) {
   // prices 
   //
   const priceingTypes = [{
-          type: "Barn",
-          amount: "65"
+    type: "Barn",
+    amount: "65"
 
-      },
-      {
-          type: "Vuxen",
-          amount: "85"
+  },
+  {
+    type: "Vuxen",
+    amount: "85"
 
-      },
-      {
-          type: "Pensionär",
-          amount: "75"
+  },
+  {
+    type: "Pensionär",
+    amount: "75"
 
-      }
+  }
   ];
-  // Hisham 
   // confirm model
   //
   let modelForm = new bootstrap.Modal($("#confirmBooking"));
@@ -141,16 +140,16 @@ function seatsFunction(a) {
       // change the class attribute back to seats and splice/remove the value you pressed from the array
       $(this).removeClass('selected-seat');
 
-          for (var i = 0; i < selectedSeats.length; i++) {
-              let removeSelect = parseInt($(this).text());
-              if (selectedSeats[i] === removeSelect) {
+      for (var i = 0; i < selectedSeats.length; i++) {
+        let removeSelect = parseInt($(this).text());
+        if (selectedSeats[i] === removeSelect) {
 
-                  selectedSeats.splice(i, 1);
-                  console.log(selectedSeats);
-              }
+          selectedSeats.splice(i, 1);
+          console.log(selectedSeats);
+        }
 
-          }
       }
+    }
 
     // the button book is disabled, but if you click on a seat it will become enabled.
     if (selectedSeats.length > 0) {
@@ -166,93 +165,93 @@ function seatsFunction(a) {
 
   // when you press the confirm book button make a booking.
   // 
-  $("#btnConfirmBook").on('click', function() {
-      let totalPrice = 0.0;
-      selectedSeats = selectedSeats.map(function(seat) {
+  $("#btnConfirmBook").on('click', function () {
+    let totalPrice = 0.0;
+    selectedSeats = selectedSeats.map(function (seat) {
 
-          // get information about seat  (type  and amount )
-          let selectedPriceingType = priceingTypes.find(function(priceingType) {
-              try {
-                  return priceingType.type == (new Array(...document.querySelectorAll(`input[name='seat-${seat}']`))).find((input) => { return input.checked }).value
-              } catch (er) {
-                  return false;
-              }
-          });
-          //
-
-          if (typeof selectedPriceingType != 'object') {
-              selectedPriceingType = {
-                  type: "Normal",
-                  amount: "85"
-
-              }
-          }
-          totalPrice += parseFloat(selectedPriceingType.amount);
-          return {
-              number: seat,
-              type: selectedPriceingType.type,
-              price: selectedPriceingType.amount,
-          }
+      // get information about seat  (type  and amount )
+      let selectedPriceingType = priceingTypes.find(function (priceingType) {
+        try {
+          return priceingType.type == (new Array(...document.querySelectorAll(`input[name='seat-${seat}']`))).find((input) => { return input.checked }).value
+        } catch (er) {
+          return false;
+        }
       });
+      //
 
-      book(showid, totalPrice, [...selectedSeats]);
-      // 
-      modelForm.hide();
-      window.bokningsbekraftelse();
-      selectedSeats = [];
+      if (typeof selectedPriceingType != 'object') {
+        selectedPriceingType = {
+          type: "Normal",
+          amount: "85"
+
+        }
+      }
+      totalPrice += parseFloat(selectedPriceingType.amount);
+      return {
+        number: seat,
+        type: selectedPriceingType.type,
+        price: selectedPriceingType.amount,
+      }
+    });
+
+    book(showid, totalPrice, [...selectedSeats]);
+    // 
+    modelForm.hide();
+    window.bokningsbekraftelse();
+    selectedSeats = [];
 
 
   });
   //
 
   // when you press the book button show confirm button.
-  $(".btn").on("click", function() {
+  $(".btn3").on("click", function () {
 
-      console.log(showid);
-      if (selectedSeats.length > 0) {
-      
-          // to get show information
-          let show = data.shows.find(x => x.id == (showid));
-          let bodyContent = `<div class='d-flex flex-column'>
+    console.log(showid);
+    if (selectedSeats.length > 0) {
+
+      // to get show information
+      let show = data.shows.find(x => x.id == (showid));
+      let bodyContent = `<div class='d-flex flex-column'>
             <div> 
             <h1>  ${show.film}<h1>
             <h3>${show.auditorium}<br>${show.date}<br>Kl: ${show.time}</h3>
             </div>
           `;
-          selectedSeats.forEach(function(seat) {
-              bodyContent += `
+      selectedSeats.forEach(function (seat) {
+        bodyContent += `
                 <div class=' mb-2' > <h3> Stolsnummer : ${seat} </h3>   <div class='p-2'>
               `;
-              priceingTypes.forEach(function(pricingType, index) {
+        priceingTypes.forEach(function (pricingType, index) {
 
-                  bodyContent += `
+          bodyContent += `
                   <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="seat-${seat}" id="btnradio-${index}-${seat}" autocomplete="off"  value=${pricingType.type}>
                     <label class="btn btn-outline-primary" for="btnradio-${index}-${seat}">${pricingType.type} (${pricingType.amount}kr) </label>
                   </div>
                   `;
-              });
-              bodyContent += `</div> </div>`
-          });
-          bodyContent += `</div>`;
-          $("#confirmBookingBody").html(bodyContent);
-          modelForm.show();
-          // 
+        });
+        bodyContent += `</div> </div>`
+      });
+      bodyContent += `</div>`;
+      $("#confirmBookingBody").html(bodyContent);
+      modelForm.show();
+      // 
 
 
-      }
+    }
 
-      $(".row1").empty();
-      $(".row2").empty();
-      $(".row3").empty();
-      $(".row4").empty();
-      $(".row5").empty();
-      $(".row6").empty();
-      $(".row7").empty();
-      $(".row8").empty();
-      freeSeats(showid);
-  
-    });
+    $(".row1").empty();
+    $(".row2").empty();
+    $(".row3").empty();
+    $(".row4").empty();
+    $(".row5").empty();
+    $(".row6").empty();
+    $(".row7").empty();
+    $(".row8").empty();
+    freeSeats(showid);
+
+  });
 }
 
 

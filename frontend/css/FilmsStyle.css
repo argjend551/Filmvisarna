@@ -1,6 +1,7 @@
 body {
   background-color: #2F303A;
 }
+
 .poster {
   height: 350px;
   width: auto;
@@ -8,14 +9,20 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   margin-top: 50px;
 }
 
-.poster:hover {
+.hem-poster-title:hover {
   transform: scale(1.12);
   transition: all 0.4s;
+
 }
+
+/*.poster:hover {
+  transform: scale(1.12);
+  transition: all 0.4s;
+}*/
 /*#title:hover{
   transform: scale(1.12);
   transition: all 0.4s;
