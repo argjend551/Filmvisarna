@@ -61,7 +61,6 @@ function setBookingNumber() {
   }
   if (valueExists) {
     renderBookingInfo(bookingNumber);
-    alert("Bokningsnumret är " + bookingNumber);
   }
   else {
     if (bookingNumber == "") {

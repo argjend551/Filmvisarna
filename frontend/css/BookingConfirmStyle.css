@@ -5,12 +5,28 @@
   margin-bottom: 400px;
   margin-top: 50px;
   border-radius: 10px;
-  width: 50%;
-  margin-left: 25%;
-  padding-top: 30px;
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 40px;
   padding-bottom: 50px;
   padding-left: 20px;
   box-shadow: 15px 15px rgb(29, 25, 25);
+}
+
+.booking h1, .myBookings h1 {
+  font-size: 5vw;
+}
+
+.booking h2, .myBookings h2 {
+  font-size: 4vw;
+}
+
+.booking h3, .myBookings h3 {
+  font-size: 3vw;
+}
+
+.booking h4, .myBookings h4 {
+  font-size: 2vw;
 }
 
 .myBookings {
@@ -20,8 +36,8 @@
   margin-bottom: 400px;
   margin-top: 50px;
   border-radius: 10px;
-  width: 50%;
-  margin-left: 25%;
+  width: 60%;
+  margin-left: 20%;
   box-shadow:rgb(29, 25, 25);
   padding-top: 30px;
   padding-bottom: 50px;
@@ -52,4 +68,5 @@
 
 .myBookingPage h1 {
   padding-bottom: 30px;
+  font-size: 6vw;
 }
