@@ -3,7 +3,7 @@ function biljetter() {
 
      $('main').html(`
    <div id="span3">
-<select id="mySelect">
+<select class="form-select form-select-sm" id="mySelect" aria-label=".form-select-sm example">
      <option value="0">Välj film</option>
      <option value="1">${data.filmer[0].title}</option>
      <option value="2">${data.filmer[2].title}</option>
@@ -13,12 +13,12 @@ function biljetter() {
      <option value="6">${data.filmer[5].title}</option>
 </select>
 
-<select id="mySelect1">
- <option value="0">Ålder</option>
+<select class="form-select form-select-sm"id="mySelect1" aria-label=".form-select-sm example">
+  <option value="0">Ålder</option>
      <option value="1">7-14</option>
      <option value="2">15+</option>
-
 </select>
+
 
 
      <table class="table table-hover">
