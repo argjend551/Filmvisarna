@@ -47,7 +47,6 @@ td {
 .cinema {
   min-width: 350px;
   max-width: 100%;
-  /*margin-left: 50%;*/
   justify-content: center;
   align-items: center;
 }
@@ -56,15 +55,6 @@ td {
   text-align: center;
 }
 
-/* .screen {
-  display: flex;
-  margin-top: -60%;
-  margin-left: -30%;
-  width: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: 1px solid rgb(255, 255, 255);
-} */
 
 
 .btn3 {
@@ -72,32 +62,37 @@ td {
   margin-top: 5%;
 }
 
+.screen {
+  display: inline-block;
+  background-color: #fff;
+  right: 18%;
+  height: 70px;
+  width: 20%;
+  margin-left: 40%;
+  margin-bottom: 5%;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
 .seats {
   display: inline-block;
   background-color: rgb(184, 16, 16);
   padding: 10px;
-  /*display: flex;*/
-  /*height: 10px;*/
   width: 32px;
   margin: 3px;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   cursor: pointer;
-  /*align-items: center;*/
 }
 
 .selected-seat {
   display: inline-block;
   background-color: rgb(2, 243, 2);
   padding: 10px;
-  /*display: flex;*/
-  /*height: 10px;*/
   width: 32px;
   margin: 3px;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   cursor: pointer;
-  /*align-items: center;*/
   cursor: pointer;
 }
 
@@ -105,13 +100,10 @@ td {
   display: inline-block;
   background-color: rgb(87, 87, 87);
   padding: 10px;
-  /*display: flex;*/
-  /*height: 10px;*/
   width: 32px;
   margin: 3px;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
-  /*align-items: center;*/
 
 }
 

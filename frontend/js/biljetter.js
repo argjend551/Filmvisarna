@@ -41,6 +41,7 @@ function biljetter() {
 
 
  <div class="cinema" >
+ <div class="screen"></div>
 <div class="col-12" >
           <div class="all-seats">
                
