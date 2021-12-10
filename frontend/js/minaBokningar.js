@@ -6,8 +6,59 @@ function minaBokningar() {
   <h1>Mina Bokningar</h1>
   <h2><lable>Skriv in ditt bokningsnummer:</lable></h2>
 <input type="text" id="text" name="name" placeholder="Bokningsnummer..." />
-<input type="button" id="text_value" value="Bekräfta" onclick="setBookingNumber()"/>
+<input type="button" id="text_value" value="Sök" onclick="setBookingNumber()"/>
 <div class="input"></div>   
+ <!-- Modal -->
+<div class="modal custom fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel input-title" style="color:black;">Bokningsnummer saknas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="input-body" style="color:black;">Bokningsnumret kan inte hittas. Kontrollera att du skrivit rätt</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="noInputModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Bokningsnummer saknas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <p style="color:black;">Skriv in ditt bokningsnummer</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal-->
+<div class="modal fade" id="bookingCancelledModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color:black;"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <p style="color:black;">Din bokning är avbokad</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="minaBokningar()">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
    `);
 }
@@ -23,7 +74,7 @@ async function cancelBooking(bookingId) {
   let bookingToCancelIndex = bookings.indexOf(bookingToCancel);
   let cancelledBooking = bookings.splice(bookingToCancelIndex, 1);
   await JSON._save('bookings', data.bookings);
-  alert(" Din bokning med bokningsnummer " + bookingNumber + " är nu avbokad.");
+  showBookingCancelledModal();
 }
 
 //Function to print information about the booking on the webpage.
@@ -64,11 +115,36 @@ function setBookingNumber() {
   }
   else {
     if (bookingNumber == "") {
-      alert("Skriv in ditt bokningsnummer")
+      showNoInputModal();
     }
     else {
       bookingNumber = "";
-      alert("Bokningsnumret hittas inte");
+      showNumberNotFoundModal();
     }
   }
+}
+
+
+function showNumberNotFoundModal() {
+  console.log("Kör showNumberNotFoundModal")
+  $('document').ready(function () {
+    $('#exampleModal').modal('show');
+  }
+  );
+}
+
+function showNoInputModal() {
+  console.log("Kör noInputModal")
+  $('document').ready(function () {
+    $('#noInputModal').modal('show');
+  }
+  );
+}
+
+function showBookingCancelledModal() {
+  console.log("Kör ShowBookingCancelledModal")
+  $('document').ready(function () {
+    $('#bookingCancelledModal').modal('show');
+  }
+  );
 }

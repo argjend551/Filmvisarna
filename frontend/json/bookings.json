@@ -1056,20 +1056,77 @@
     "totalPrice": 170
   },
   {
-    "id": "M8372",
-    "showId": 5,
+    "id": "I9912",
+    "showId": 1,
     "seats": [
       {
-        "number": 56,
+        "number": 26,
         "type": "Vuxen",
         "price": "85"
       },
       {
-        "number": 55,
+        "number": 27,
+        "type": "Barn",
+        "price": "65"
+      }
+    ],
+    "totalPrice": 150
+  },
+  {
+    "id": "V5566",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 53,
+        "type": "Pensionär",
+        "price": "75"
+      },
+      {
+        "number": 52,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 160
+  },
+  {
+    "id": "N1614",
+    "showId": 2,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "D1598",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 26,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 25,
         "type": "Vuxen",
         "price": "85"
       }
     ],
     "totalPrice": 170
+  },
+  {
+    "id": "J3104",
+    "showId": 1,
+    "seats": [
+      {
+        "number": 62,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 63,
+        "type": "Barn",
+        "price": "65"
+      }
+    ],
+    "totalPrice": 150
   }
 ]
