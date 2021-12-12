@@ -1,4 +1,6 @@
 //Content for the films view
+// fetch all informations (data) about the film when you click on a specific film with help of id 
+
 function filmer(id) {
      let film = data.filmer.find(x => x.id === id);
 
@@ -15,6 +17,7 @@ function filmer(id) {
      Regissör: ${film.director}<br> Skådespelare: ${film.actors} <br> Handling: ${film.description} 
      Recensioner: ${film.reviews[0].source} <br> ${film.reviews[0].quote} </p>
     <h5> Ratning: ${film.reviews[0].stars}  / ${film.reviews[0].max}<h5></div>
+
 
    <div id="span3">
 
