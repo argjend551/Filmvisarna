@@ -1,6 +1,8 @@
 //Content for the films view
 // fetch all informations (data) about the film when you click on a specific film with help of id 
 
+
+
 function filmer(id) {
      let film = data.filmer.find(x => x.id === id);
 
