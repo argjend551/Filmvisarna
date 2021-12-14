@@ -22,6 +22,7 @@
      position: relative;
      border-radius: 20%;
      left: 100px;
+     color: white !important;
 }
 
 .nav-link:hover {
@@ -30,5 +31,5 @@
 
 
 .navbar-light .navbar-toggler-icon {
-     color: black;
+     color:black;
 }
