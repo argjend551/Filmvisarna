@@ -1,13 +1,5 @@
 [
   {
-    "id": "f4863",
-    "showId": 1,
-    "seats": [
-      1,
-      2
-    ]
-  },
-  {
     "id": "a2790",
     "showId": 1,
     "seats": [
@@ -20,14 +12,6 @@
     "showId": 1,
     "seats": [
       3
-    ]
-  },
-  {
-    "id": "d8289",
-    "showId": 1,
-    "seats": [
-      6,
-      7
     ]
   },
   {
@@ -1187,5 +1171,69 @@
     "showId": 21,
     "seats": [],
     "totalPrice": 0
+  },
+  {
+    "id": "W8080",
+    "showId": 25,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "J1502",
+    "showId": 25,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "S7755",
+    "showId": 25,
+    "seats": [
+      {
+        "number": 31,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 32,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
+  },
+  {
+    "id": "Q6048",
+    "showId": 4,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "Y7446",
+    "showId": 4,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "Y8735",
+    "showId": 4,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "V7251",
+    "showId": 4,
+    "seats": [
+      {
+        "number": 29,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 39,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
   }
 ]

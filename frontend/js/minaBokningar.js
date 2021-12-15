@@ -9,15 +9,15 @@ function minaBokningar() {
 <input type="button" id="text_value" value="Sök" onclick="setBookingNumber()"/>
 <div class="input"></div>   
  <!-- Modal -->
-<div class="modal custom fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal custom fade" id="bookingNumberNotFoundModal" tabindex="-1" aria-labelledby="bookingNumberNotFoundModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel input-title" style="color:black;">Bokningsnummer saknas</h5>
+        <h5 class="modal-title" id="bookingNumberNotFoundModalLabel">Bokningsnummer saknas</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p id="input-body" style="color:black;">Bokningsnumret kan inte hittas. Kontrollera att du skrivit rätt</p>
+        <p class="input-body">Bokningsnumret kan inte hittas. Kontrollera att du skrivit rätt.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
@@ -25,15 +25,15 @@ function minaBokningar() {
     </div>
   </div>
 </div>
-<div class="modal fade" id="noInputModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="noInputModal" tabindex="-1" aria-labelledby="noInputModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Bokningsnummer saknas</h5>
+        <h5 class="modal-title" id="noInputModalLabel">Bokningsnummer saknas</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <p style="color:black;">Skriv in ditt bokningsnummer</p>
+      <p class="input-body">Skriv in ditt bokningsnummer</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
@@ -42,15 +42,15 @@ function minaBokningar() {
   </div>
 </div>
 <!--modal-->
-<div class="modal fade" id="bookingCancelledModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="bookingCancelledModal" tabindex="-1" aria-labelledby="bookingCancelledModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" style="color:black;"></h5>
+        <h5 class="modal-title" id="bookingCancelledModalLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <p style="color:black;">Din bokning är avbokad</p>
+      <p class="input-body">Din bokning är avbokad</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="minaBokningar()">OK</button>
@@ -128,7 +128,7 @@ function setBookingNumber() {
 function showNumberNotFoundModal() {
   console.log("Kör showNumberNotFoundModal")
   $('document').ready(function () {
-    $('#exampleModal').modal('show');
+    $('#bookingNumberNotFoundModal').modal('show');
   }
   );
 }

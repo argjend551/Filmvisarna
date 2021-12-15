@@ -2,7 +2,6 @@
   background-color: rgb(221, 219, 219);
   text-align: left;
   color: black;
-  margin-bottom: 400px;
   margin-top: 50px;
   border-radius: 10px;
   width: 70%;
@@ -14,11 +13,11 @@
 }
 
 
+
 .myBookings {
   background-color: rgb(221, 219, 219);
   text-align: left;
   color: black;
-  margin-bottom: 400px;
   margin-top: 50px;
   border-radius: 10px;
   width: 70%;
@@ -26,9 +25,17 @@
   box-shadow:rgb(29, 25, 25);
   padding-top: 30px;
   padding-bottom: 50px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right:10px;
 
+}
+
+.myBookings h1  {
+  font-size: 3.5vw;
+}
+
+.myBookings h2  {
+  font-size: 3vw;
 }
 
 .showBookingBtn {
@@ -46,12 +53,28 @@
 }
 
 .myBookingPage {
-  margin-bottom: 300px;
+  margin-bottom: 100%;
   padding-bottom: 40px;
   color: white;
 }
 
 .myBookingPage h1 {
+  padding-top: 20px;
   padding-bottom: 30px;
-  font-size: 6vw;
+}
+
+.modal-body .input-body  {
+  color: black;
+}
+
+.modal-header #noInputModalLabel  {
+  color: black;
+}
+
+.modal-header #bookingCancelledModalLabel  {
+  color: black;
+}
+
+.modal-header #bookingNumberNotFoundModalLabel  {
+  color: black;
 }
