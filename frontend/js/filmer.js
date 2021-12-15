@@ -44,6 +44,11 @@ function filmer(id) {
 
 
  <div class="cinema" >
+  <div class="span">
+  <div class="screen">
+ 
+ </div>
+ </div>
 <div class="col-12" >
           <div class="all-seats">
 
@@ -57,7 +62,7 @@ function filmer(id) {
 
 
     `);
-     console.log(film.title);
+     window.scrollTo(0, 0);
      findByfilm('shows', film.title);
 
 }

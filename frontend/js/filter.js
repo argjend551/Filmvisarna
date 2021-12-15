@@ -19,7 +19,9 @@ function findByfilm(type, film) {
 
      $("td").click(function () {
           showid = parseInt($(this).closest('td').attr('class'));
-          console.log(showid);
+          let element = document.querySelector(".all-seats");
+
+          element.scrollIntoView();
           freeSeats(showid);
           seatsFunction(showid);
      });
@@ -40,8 +42,10 @@ function findbyAge(type, age) {
      // this function sends the id of the film you click to the method choice
 
      $("td").click(function () {
+          let element = document.querySelector(".screen");
+
+          element.scrollIntoView();
           showid = parseInt($(this).closest('td').attr('class'));
-          console.log(showid);
           freeSeats(showid);
           seatsFunction(showid);
      });
@@ -67,9 +71,10 @@ function displayFilms() {
      }
      $("<tbody/>", { "class": "mydata", html: shows.join("") }).appendTo("table");
      $("td").click(function () {
+          let element = document.querySelector(".screen");
 
+          element.scrollIntoView();
           showid = parseInt($(this).closest('td').attr('class'));
-          console.log(showid);
           freeSeats(showid);
           seatsFunction(showid);
      });
@@ -137,7 +142,6 @@ function filterfilm() {
 
      $('#mySelect1').change(function () {
           var value = $(this).val();
-          console.log(value);
 
 
           if (value == 0) {
@@ -164,6 +168,9 @@ function filterfilm() {
      });
 
 
+
+
+   
 
 
 }

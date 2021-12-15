@@ -13,26 +13,21 @@ hr {
   position: absolute;
   border: none;
   padding: 0 1em 0 0;
-  width: 7%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
+  min-width: 100px;
+  max-width: 100px;
   line-height: inherit;
-  left: 76%;
-  top: 25%;
+  margin-left: 110px;
+  
 }
 
 #mySelect1 {
   position: absolute;
   border: none;
   padding: 0 1em 0 0;
-  width: 4%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
+  min-width: 100px;
+  max-width: 100px;
   line-height: inherit;
-  left: 71%;
-  top: 25%;
+
 }
 
 td {
@@ -65,12 +60,19 @@ td {
 .screen {
   display: inline-block;
   background-color: #fff;
-  right: 18%;
   height: 70px;
-  width: 20%;
-  margin-left: 40%;
-  margin-bottom: 5%;
+  max-width: 20%;
+  min-width: 350px;
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.span {
+  min-width: 350px;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3%;
 }
 
 .seats {
@@ -121,7 +123,12 @@ td {
   margin-top: 200px;
   margin-left: 20%;
   margin-bottom: 10%;
-  height: 250px !important;
+  height: 350px !important;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+#selectors {
+  margin-top: 170px;
+  margin-left: 20%;
 }

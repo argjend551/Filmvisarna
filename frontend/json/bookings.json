@@ -825,18 +825,6 @@
     "totalPrice": 140
   },
   {
-    "id": "H9355",
-    "showId": 3,
-    "seats": [
-      {
-        "number": 51,
-        "type": "Vuxen",
-        "price": "85"
-      }
-    ],
-    "totalPrice": 85
-  },
-  {
     "id": "A3949",
     "showId": 62,
     "seats": [],
@@ -1128,5 +1116,76 @@
       }
     ],
     "totalPrice": 150
+  },
+  {
+    "id": "M7819",
+    "showId": 5,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "W9203",
+    "showId": 5,
+    "seats": [
+      {
+        "number": 12,
+        "type": "Normal",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 85
+  },
+  {
+    "id": "K1138",
+    "showId": 5,
+    "seats": [
+      {
+        "number": 13,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 14,
+        "type": "Pensionär",
+        "price": "75"
+      }
+    ],
+    "totalPrice": 160
+  },
+  {
+    "id": "T5469",
+    "showId": 21,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "A1259",
+    "showId": 21,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "T8659",
+    "showId": 21,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "L4152",
+    "showId": 21,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "T9142",
+    "showId": 21,
+    "seats": [],
+    "totalPrice": 0
+  },
+  {
+    "id": "O8386",
+    "showId": 21,
+    "seats": [],
+    "totalPrice": 0
   }
 ]

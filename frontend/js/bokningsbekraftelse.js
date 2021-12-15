@@ -1,9 +1,3 @@
-//Content for the bokningsbekraftelse view
-
-//let booking = data.bookings.find(x => x.id === (data.bookings.length - 1));
-
-
-
 function bokningsbekraftelse() {
   let booking = data.bookings[data.bookings.length - 1];
   let show = data.shows.find(x => x.id == (booking.showId));
@@ -36,5 +30,5 @@ ${seats}
 <h3>Bokningsnummer: ${booking.id}</h3>
 </div>
   `);
-
+  window.scrollTo(0, 0);
 }
