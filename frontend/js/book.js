@@ -123,6 +123,11 @@ function seatsFunction(a) {
   // confirm model
   //
   let modelForm = new bootstrap.Modal($("#confirmBooking"));
+  $("#confirmBooking").on("hidden.bs.modal", function() {
+    $(".all-seats").text("");
+    selectedSeats = [];
+    $(".btn").attr("disabled", true);
+});
   //creating empty array
   let selectedSeats = [];
   // if you click on a seat displayed on the screen,
