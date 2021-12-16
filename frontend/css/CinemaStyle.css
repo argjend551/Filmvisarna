@@ -1,8 +1,12 @@
-* {
+/*
+// This affects all the elements, please fix!
+
+* 
+{
   font-size: 15px;
   align-items: center;
   font-weight: 600;
-}
+}*/
 
 hr {
   color: white;
