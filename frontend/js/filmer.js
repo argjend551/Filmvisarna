@@ -75,9 +75,10 @@ function filmer(id) {
 <div class="col-12" >
           <div class="all-seats">
                
-          </div>
+      </div>
+          <div class=wrap-btn>
           <button type="button" disabled class="btn btn-success btn3">Boka</button>
-</div>
+          </div>
      </div>
   `);
 	window.scrollTo(0, 0);

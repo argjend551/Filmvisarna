@@ -53,7 +53,9 @@ function biljetter() {
           <div class="all-seats">
                
           </div>
+          <div class=wrap-btn>
           <button type="button" disabled class="btn btn-success btn3">Boka</button>
+          </div>
 </div>
      </div>
 
