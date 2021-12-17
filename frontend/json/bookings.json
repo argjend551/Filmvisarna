@@ -1212,28 +1212,5 @@
     "showId": 4,
     "seats": [],
     "totalPrice": 0
-  },
-  {
-    "id": "Y8735",
-    "showId": 4,
-    "seats": [],
-    "totalPrice": 0
-  },
-  {
-    "id": "V7251",
-    "showId": 4,
-    "seats": [
-      {
-        "number": 29,
-        "type": "Vuxen",
-        "price": "85"
-      },
-      {
-        "number": 39,
-        "type": "Vuxen",
-        "price": "85"
-      }
-    ],
-    "totalPrice": 170
   }
 ]

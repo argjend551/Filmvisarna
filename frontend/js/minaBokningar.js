@@ -5,7 +5,7 @@ function minaBokningar() {
   <div class="myBookingPage">
   <div class="row mt-1">
   <div class="offset-2 offset-sm-3 offset-md-4 col-10 col-sm-6 col-md-5"><h1 id="myBookingPageH1">Mina Bokningar</h1>
- <h2><lable>Skriv in ditt bokningsnummer:</lable></h2>
+ <h5><lable>Skriv in ditt bokningsnummer:</lable></h5>
 <input type="text" id="text" name="name" placeholder="Bokningsnummer..." />
 <input type="button" id="text_value" value="Sök" onclick="setBookingNumber()"/></div></div>
 <div class="input"></div>   
@@ -155,14 +155,4 @@ function showBookingCancelledModal() {
     $('#bookingCancelledModal').modal('show');
   }
   );
-}
-
-function printSeats(booking) {
-  console.log('Kör PrintSeats');
-  let html = ''
-  for (let i = 0; i < 3; i++) {
-    html += `${booking.seats[i].number},`
-  }
-  console.log(html);
-  return html;
 }

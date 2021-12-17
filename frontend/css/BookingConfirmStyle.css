@@ -70,18 +70,9 @@ button.cancelBtn.btn-success {
   padding-bottom: 30px;
 }
 
-.modal-body .input-body  {
+.modal-body .input-body, .modal-header #noInputModalLabel, .modal-header #bookingCancelledModalLabel,
+.modal-header #bookingNumberNotFoundModalLabel   {
   color: black;
+  text-align: center;
 }
 
-.modal-header #noInputModalLabel  {
-  color: black;
-}
-
-.modal-header #bookingCancelledModalLabel  {
-  color: black;
-}
-
-.modal-header #bookingNumberNotFoundModalLabel  {
-  color: black;
-}
