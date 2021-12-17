@@ -18,16 +18,15 @@
   background-color: rgb(221, 219, 219);
   text-align: left;
   color: black;
-  margin-top: 50px;
   border-radius: 10px;
-  width: 70%;
-  margin-left: 15%;
-  box-shadow:rgb(29, 25, 25);
-  padding-top: 30px;
+  border-style:solid;
+  border-color: #8d2168;
+  border-width: 5px;
+  box-shadow:15px 15px rgb(29, 25, 25);
+  padding-top: 20px;
   padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right:10px;
-
+  padding-left: 40px;
+  
 }
 
 .myBookings h1  {
@@ -42,14 +41,22 @@
   border-radius: 5px;
 }
 
-.cancelBtn {
+button.cancelBtn.btn-success {
   padding: 5px;
   margin-top: 30px;
   border-radius: 5px;
+  background-color: #8d2168;
 }
 
 .bookingText {
   color:white;
+}
+
+#text_value  {
+  background-color: #8d2168;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .myBookingPage {
@@ -58,7 +65,7 @@
   color: white;
 }
 
-.myBookingPage h1 {
+.myBookingPage #myBookingPageH1 {
   padding-top: 20px;
   padding-bottom: 30px;
 }

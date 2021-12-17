@@ -2,11 +2,12 @@ let bookingNumber;
 
 function minaBokningar() {
   $('main').html(`
-  <div class="container-fluid myBookingPage">
-  <h1>Mina Bokningar</h1>
-  <h2><lable>Skriv in ditt bokningsnummer:</lable></h2>
+  <div class="myBookingPage">
+  <div class="row mt-1">
+  <div class="offset-2 offset-sm-3 offset-md-4 col-10 col-sm-6 col-md-5"><h1 id="myBookingPageH1">Mina Bokningar</h1>
+ <h2><lable>Skriv in ditt bokningsnummer:</lable></h2>
 <input type="text" id="text" name="name" placeholder="Bokningsnummer..." />
-<input type="button" id="text_value" value="Sök" onclick="setBookingNumber()"/>
+<input type="button" id="text_value" value="Sök" onclick="setBookingNumber()"/></div></div>
 <div class="input"></div>   
  <!-- Modal -->
 <div class="modal custom fade" id="bookingNumberNotFoundModal" tabindex="-1" aria-labelledby="bookingNumberNotFoundModalLabel" aria-hidden="true">
@@ -83,14 +84,21 @@ async function cancelBooking(bookingId) {
 function renderBookingInfo(bookingNumber) {
   let booking = data.bookings.find(x => x.id == (bookingNumber));
   let show = data.shows.find(x => x.id == (booking.showId));
+  let seats = booking.seats.map(function (seat) { return seat.number; });
+  seats = seats.sort();
+  let seatsString = seats.join(', ');
   $('.input').html(`
-  <div class="myBookings"><h1>Min bokning</h1>
+  <div class="row mt-5"><div class="offset-1 offset-sm-2 offset-md-3 col-10 col-sm-8 col-md-6"><div class="myBookings"><h1>Min bokning</h1>
   <h2>Bokningsnummer: ${booking.id}</h2>
   <h2>Film: ${show.film}</h2>
   <h2>Datum: ${show.date}</h2>
   <h2>Tid: ${show.time}</h2>
   <h2>Salong: ${show.auditorium}</h2>
-  <div><button type='button'class="cancelBtn btn-success" onclick="cancelBooking(bookingNumber)">Avboka</button></div>
+  <h2>Platser: ${seatsString}</h2>
+  <h2>Pris: ${booking.totalPrice} kr</h2>
+  <button type='button'class="cancelBtn btn-success" onclick="cancelBooking(bookingNumber)">Avboka</button>
+  </div>
+  </div>
   </div>
   `)
 }
@@ -147,4 +155,14 @@ function showBookingCancelledModal() {
     $('#bookingCancelledModal').modal('show');
   }
   );
+}
+
+function printSeats(booking) {
+  console.log('Kör PrintSeats');
+  let html = ''
+  for (let i = 0; i < 3; i++) {
+    html += `${booking.seats[i].number},`
+  }
+  console.log(html);
+  return html;
 }
