@@ -1,24 +1,25 @@
 body {
   background-color: #2F303A;
+  overflow-x: hidden; /*cheat*/
+
 }
 
+
+
 .poster {
-  height: 380px;
+  height: 350px;
   width: auto;
   border-radius: 25px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
-  margin-top: 30px;
-  
-  
+  margin-bottom: 40px;
 }
 
-.hem-poster-title:hover {
+.poster:hover {
+
   transform: scale(1.12);
   transition: all 0.4s;
-
 }
 
 
@@ -31,25 +32,12 @@ body {
   min-height: 7rem;
   white-space: normal;
   opacity: 1;
-}
 
-.post {
-  width: auto;
-  height: 400px;
-  border-radius: 10px;
-  align-items: center;
-  margin-left: 100px;
-}
-
-.filmText {
-  width: auto;
-  color: white;
-  margin-left: 500px;
-  margin-top: -480px;
 }
 
 p {
   padding: auto;
+
 }
 
 .book {
@@ -60,3 +48,64 @@ p {
   left: 95%;
   border-radius: 15%;
 }
+
+.Movie-background-fluid {
+
+margin-top:-20px; 
+background-repeat:no-repeat; 
+position:relative;
+width: 100% !important;
+}
+
+
+.Movie-background{
+
+width: 100% !important;
+z-index:-1; 
+ position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
+.film-images-fluid{
+/*height:auto; 
+max-height: 10%;
+width: 20%; 
+position:absolute;
+*/
+}
+
+
+.text-fluid{
+  width: 30%;
+  height: 4%;
+  color: white;
+  margin-top: 56%;
+  margin-left:47%;
+  
+  
+ 
+ }
+
+ .youtubeTrailers{
+  width: 50%;
+  margin-right: 40px;
+  float: right;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 650px)  {
+  .youtubeTrailers{
+     width: 40%;
+  }
+}
+
+
+ .camera-bg {
+   background-image: url('/Filmer-images/Movie-projector.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+
