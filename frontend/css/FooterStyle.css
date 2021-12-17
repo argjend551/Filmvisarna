@@ -1,21 +1,25 @@
 /* FOOTER */
-.footer-content{
+.footer-content {
   background: grey;
   height: 300px;
   position: relative;
+  font-size: 15px;
+  align-items: center;
+  font-weight: 600;
 }
 
-.footer-content .footer-content{
+.footer-content .footer-content {
   height: 350px;
   display: flex;
 }
 
-.footer-content .footer-selection{
+.footer-content .footer-selection {
   flex: 1;
   padding: 25px;
 }
-.footer-content .footer-bottom{
-  background:rgb(87, 87, 87);
+
+.footer-content .footer-bottom {
+  background: rgb(87, 87, 87);
   color: rgb(199, 198, 198);
   height: 35px;
   width: 100%;
@@ -29,19 +33,21 @@
   padding-bottom: 10px;
 }
 
-.footer-content .footer-links{
-text-decoration: none;
-font-size: 15px;
-color: white;
-text-align: left;
-padding-bottom: 80px;
-padding-right: 50px;
+.footer-content .footer-links {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  padding-bottom: 80px;
+  padding-right: 50px;
 }
-p3{
+
+p3 {
   font-size: 15px;
   color: white;
 }
-p2{
+
+p2 {
   font-size: 15px;
   color: white;
 }

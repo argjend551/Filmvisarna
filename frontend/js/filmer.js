@@ -63,20 +63,24 @@ function filmer(id) {
 
 		</div>
 
+ <div class="cinema" >
+ <div class="col-12" >
 
-		<div class="cinema">
-			<div class="col-12">
-				<div class="all-seats">
-
-				</div>
-				<button type="button" disabled class="btn btn-success">Boka</button>
-
-			</div>
-		</div>
-
-		</div>
+ <div class="span">
+  <div class="screen">
+ 
+ </div>
+ </div>
+ </div>
+<div class="col-12" >
+          <div class="all-seats">
+               
+          </div>
+          <button type="button" disabled class="btn btn-success btn3">Boka</button>
+</div>
+     </div>
   `);
-     console.log(film.title);
+	window.scrollTo(0, 0);
      findByfilm('shows', film.title);
 
      cameraImageSetHeight();
