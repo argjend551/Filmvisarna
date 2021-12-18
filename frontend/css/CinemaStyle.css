@@ -136,6 +136,16 @@ td {
   margin-left: 20%;
 }
 
+#date-picker-example {
+  margin-left: 220px;
+  position: absolute;
+  border: none;
+  padding: 0 1em 0 0;
+  height: 22px;
+  min-width: 160px;
+  max-width: 160px;
+  line-height: inherit;
+}
 
 @media only screen and (max-width: 650px) {
   .seats {
@@ -159,4 +169,26 @@ td {
     text-align: center;
   }
 
+  #date-picker-example {
+    margin-top: -35px;
+    margin-left: 20px;
+    position: absolute;
+    padding: 0 1em 0 0;
+    height: 22px;
+    min-width: 160px;
+    max-width: 160px;
+    line-height: inherit;
+  }
+
+  #span3 {
+    display: block;
+    width: 80%;
+    color: white;
+    margin-top: 200px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    height: 350px !important;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
 }
