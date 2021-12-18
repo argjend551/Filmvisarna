@@ -59,6 +59,19 @@ function biljetter() {
           </div>
 </div>
      </div>
+<!-- Modal -->
+<div class="modal fade" id="datemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+       <h4> Inga visningar denna dagen </h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary dateclose" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   `);
      window.scrollTo(0, 0);

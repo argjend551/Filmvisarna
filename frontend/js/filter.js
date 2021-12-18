@@ -171,6 +171,7 @@ function dateFilter() {
      let showws = [];
      $('#date-picker-example').change(function () {
           let showws = [];
+
           $("tbody").empty();
           let selectedDate = $(this).val();
           let shows;
@@ -188,6 +189,15 @@ function dateFilter() {
           
           $("<tbody/>", { "class": "mydata", html: showws.join("") }).appendTo("table");
      // this function sends the id of the film you click to the method choice
+          if (showws.length == 0) {
+               $('#datemodal').modal('show');
+          }
+          $(".dateclose").click(function () {
+               displayFilms();
+               $('#datemodal').modal('hide');
+          });
+
+
           $("td").click(function () {
                let element = document.querySelector(".screen");
 
