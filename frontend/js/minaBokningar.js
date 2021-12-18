@@ -4,8 +4,8 @@ function minaBokningar() {
   $('main').html(`
   <div class="myBookingPage">
   <div class="row mt-1">
-  <div class="offset-2 offset-sm-3 offset-md-4 col-10 col-sm-6 col-md-5"><h1 id="myBookingPageH1">Mina Bokningar</h1>
- <h5><lable>Skriv in ditt bokningsnummer:</lable></h5>
+  <div class="offset-2 offset-sm-3 offset-md-4 col-8 col-sm-6 col-md-4" id="enterBookingInfo"><h1 id="myBookingPageH1">Mina Bokningar</h1>
+ <h6><lable>Skriv in ditt bokningsnummer:</lable></h6>
 <input type="text" id="text" name="name" placeholder="Bokningsnummer..." />
 <input type="button" id="text_value" value="Sök" onclick="setBookingNumber()"/></div></div>
 <div class="input"></div>   

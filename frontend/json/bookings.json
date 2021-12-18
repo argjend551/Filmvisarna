@@ -1185,30 +1185,7 @@
     "totalPrice": 0
   },
   {
-    "id": "S7755",
-    "showId": 25,
-    "seats": [
-      {
-        "number": 31,
-        "type": "Vuxen",
-        "price": "85"
-      },
-      {
-        "number": 32,
-        "type": "Vuxen",
-        "price": "85"
-      }
-    ],
-    "totalPrice": 170
-  },
-  {
     "id": "Q6048",
-    "showId": 4,
-    "seats": [],
-    "totalPrice": 0
-  },
-  {
-    "id": "Y7446",
     "showId": 4,
     "seats": [],
     "totalPrice": 0

@@ -60,7 +60,6 @@ button.cancelBtn.btn-success {
 }
 
 .myBookingPage {
-  margin-bottom: 100%;
   padding-bottom: 40px;
   color: white;
 }
@@ -76,3 +75,19 @@ button.cancelBtn.btn-success {
   text-align: center;
 }
 
+@media only screen and (max-width: 400px)  {
+   #enterBookingInfo {
+     width: 90%;
+     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 300px)  {
+   #enterBookingInfo {
+     width: 100%;
+  }
+}
+
+#enterBookingInfo {
+  text-align: center;
+}
