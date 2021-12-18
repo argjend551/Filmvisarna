@@ -188,6 +188,15 @@ function dateFilter() {
           
           $("<tbody/>", { "class": "mydata", html: showws.join("") }).appendTo("table");
      // this function sends the id of the film you click to the method choice
+          $("td").click(function () {
+               let element = document.querySelector(".screen");
+
+               element.scrollIntoView();
+               showid = parseInt($(this).closest('td').attr('class'));
+               freeSeats(showid);
+               seatsFunction(showid);
+          });
+
      })
      
 
