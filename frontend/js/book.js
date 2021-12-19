@@ -69,10 +69,14 @@ function freeSeats(showId) {
   // Loop through all bookings to get occupied seats
   let occupiedSeats = [];
   for (let booking of data.bookings) {
+    console.log(booking);
     // If it is not the same show then do nothing
     if (booking.showId != showId) { continue; }
+  // taking out the seats number
+    let seat = booking.seats.map(x => x.number);
     // Add the seats as occupied
-    occupiedSeats.push(...booking.seats);
+
+    occupiedSeats.push(...seat);
   }
 
   // Build an array with all seats in the auditorium
