@@ -69,7 +69,6 @@ function freeSeats(showId) {
   // Loop through all bookings to get occupied seats
   let occupiedSeats = [];
   for (let booking of data.bookings) {
-    console.log(booking);
     // If it is not the same show then do nothing
     if (booking.showId != showId) { continue; }
   // taking out the seats number
@@ -202,8 +201,10 @@ function seatsFunction(a) {
         price: selectedPriceingType.amount,
       }
     });
+    if (selectedSeats.length > 0) {
+      book(showid, totalPrice, [...selectedSeats]);
 
-    book(showid, totalPrice, [...selectedSeats]);
+    }
     // 
     modelForm.hide();
     window.bokningsbekraftelse();
@@ -216,7 +217,6 @@ function seatsFunction(a) {
   // when you press the book button show confirm button.
   $(".btn3").on("click", function () {
 
-    console.log(showid);
     if (selectedSeats.length > 0) {
 
       // to get show information
