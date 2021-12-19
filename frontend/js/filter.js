@@ -192,10 +192,7 @@ function dateFilter() {
           if (showws.length == 0) {
                $('#datemodal').modal('show');
           }
-          $(".dateclose").click(function () {
-               displayFilms();
-               $('#datemodal').modal('hide');
-          });
+         
 
 
           $("td").click(function () {
@@ -206,7 +203,11 @@ function dateFilter() {
                freeSeats(showid);
                seatsFunction(showid);
           });
-
+          $(".dateclose").click(function () {
+               $("tbody").empty();
+               displayFilms();
+               $('#datemodal').modal('hide');
+          });
      })
      
 
