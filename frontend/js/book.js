@@ -2,7 +2,7 @@
 // showId = id of the show to book
 // seats should be an array of set numbers
 let a = "";
-
+let selectedSeats = [];
 //Hisham 
 // Add totalPrice as parameter 
 async function book(showId, totalPrice, seats) {
@@ -27,7 +27,7 @@ async function book(showId, totalPrice, seats) {
     }
   }
 
-  function makeid(length) {
+  function makeid() {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var charactersLength = characters.length;
@@ -103,8 +103,7 @@ function freeSeats(showId) {
 }
 
 // the function to select seats to book
-function seatsFunction(a) {
-  // Hisham 
+function seatsFunction() {
   // prices 
   //
   const priceingTypes = [{
@@ -132,7 +131,7 @@ function seatsFunction(a) {
     $(".btn").attr("disabled", true);
 });
   //creating empty array
-  let selectedSeats = [];
+  selectedSeats = [];
   // if you click on a seat displayed on the screen,
   // change the class attribute to selected-seats and push the array index you pressed to array selectedSeats
   $('.seats').click(function () {
@@ -205,7 +204,7 @@ function seatsFunction(a) {
       book(showid, totalPrice, [...selectedSeats]);
 
     }
-    // 
+    
     modelForm.hide();
     window.bokningsbekraftelse();
     selectedSeats = [];

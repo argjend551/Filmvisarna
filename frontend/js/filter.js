@@ -45,7 +45,7 @@ function findbyAge(type, age) {
 
      $("td").click(function () {
           let element = document.querySelector(".screen");
-
+          selectedSeats = [];
           element.scrollIntoView();
           showid = parseInt($(this).closest('td').attr('class'));
           freeSeats(showid);
@@ -74,7 +74,7 @@ function displayFilms() {
      $("<tbody/>", { "class": "mydata", html: shows.join("") }).appendTo("table");
      $("td").click(function () {
           let element = document.querySelector(".screen");
-
+          selectedSeats = [];
           element.scrollIntoView();
           showid = parseInt($(this).closest('td').attr('class'));
           freeSeats(showid);
@@ -197,7 +197,8 @@ function dateFilter() {
 
           $("td").click(function () {
                let element = document.querySelector(".screen");
-
+               selectedSeats = [];
+               
                element.scrollIntoView();
                showid = parseInt($(this).closest('td').attr('class'));
                freeSeats(showid);
@@ -209,8 +210,6 @@ function dateFilter() {
                $('#datemodal').modal('hide');
           });
      })
-     
-
 
 
      
