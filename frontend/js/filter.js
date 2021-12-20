@@ -20,7 +20,7 @@ function findByfilm(type, film) {
      $("td").click(function () {
           showid = parseInt($(this).closest('td').attr('class'));
           let element = document.querySelector(".all-seats");
-
+          selectedSeats = [];
           element.scrollIntoView();
           freeSeats(showid);
           seatsFunction(showid);
@@ -168,7 +168,6 @@ function filterfilm() {
 
 
 function dateFilter() {
-     let showws = [];
      $('#date-picker-example').change(function () {
           let showws = [];
 

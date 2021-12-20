@@ -121,7 +121,7 @@ td {
 }
 
 .modal-footer {
-justify-content: center;
+  justify-content: center;
 }
 
 #datemodal {
@@ -158,7 +158,7 @@ justify-content: center;
 
 @media only screen and (max-width: 650px) {
   .seats {
-    width: 24px;
+    width: 23px;
     height: 24px;
     font-size: 12px;
     text-align: center;
@@ -166,14 +166,14 @@ justify-content: center;
 
   .selected-seat {
     font-size: 12px;
-    width: 24px;
+    width: 23px;
     height: 24px;
     text-align: center;
   }
 
   .disabledseats {
     font-size: 12px;
-    width: 24px;
+    width: 23px;
     height: 24px;
     text-align: center;
   }
