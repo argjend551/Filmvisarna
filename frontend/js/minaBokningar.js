@@ -4,12 +4,12 @@ function minaBokningar() {
   $('main').html(`
   <div class="myBookingPage">
   <div class="row mt-1">
-  <div class="offset-2 offset-sm-3 offset-md-4 col-8 col-sm-6 col-md-4" id="enterBookingInfo"><h1 id="myBookingPageH1">Mina Bokningar</h1>
+  <div class="offset-2 offset-sm-3 offset-lg-4 col-8 col-sm-6 col-lg-4" id="enterBookingInfo"><h1 id="myBookingPageH1">Mina Bokningar</h1>
  <h6><lable>Skriv in ditt bokningsnummer:</lable></h6>
 <input type="text" id="text" name="name" placeholder="Bokningsnummer..." />
 <input type="button" id="text_value" value="Sök" onclick="setBookingNumber()"/></div></div>
 <div class="input"></div>   
- <!-- Modal -->
+ <!-- Modal that shows when booking number is not found -->
 <div class="modal custom fade" id="bookingNumberNotFoundModal" tabindex="-1" aria-labelledby="bookingNumberNotFoundModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -26,6 +26,7 @@ function minaBokningar() {
     </div>
   </div>
 </div>
+<!-- Modal that shows when no booking number is entered -->
 <div class="modal fade" id="noInputModal" tabindex="-1" aria-labelledby="noInputModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -42,7 +43,7 @@ function minaBokningar() {
     </div>
   </div>
 </div>
-<!--modal-->
+<!--modal that shows to confirm a booking is cancelled -->
 <div class="modal fade" id="bookingCancelledModal" tabindex="-1" aria-labelledby="bookingCancelledModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
