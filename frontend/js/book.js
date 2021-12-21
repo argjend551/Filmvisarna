@@ -69,7 +69,7 @@ function freeSeats(showId) {
   for (let booking of data.bookings) {
     // If it is not the same show then do nothing
     if (booking.showId != showId) { continue; }
-  // taking out the seats number
+    // taking out the seats number
     let seat = booking.seats.map(x => x.number);
     // Add the seats as occupied
 
@@ -123,11 +123,11 @@ function seatsFunction() {
   // confirm model
   //
   let modelForm = new bootstrap.Modal($("#confirmBooking"));
-  $("#confirmBooking").on("hidden.bs.modal", function() {
+  $("#confirmBooking").on("hidden.bs.modal", function () {
     $(".all-seats").text("");
     selectedSeats = [];
     $(".btn").attr("disabled", true);
-});
+  });
   //creating empty array
   selectedSeats = [];
   // if you click on a seat displayed on the screen,
@@ -202,7 +202,7 @@ function seatsFunction() {
       book(showid, totalPrice, [...selectedSeats]);
 
     }
-    
+
     modelForm.hide();
     window.bokningsbekraftelse();
     selectedSeats = [];

@@ -6,7 +6,7 @@
                "USA"
           ],
           "productionYear": 2004,
-          "length": 109,
+          "length": "1 tim 49 min",
           "genre": "Komedi",
           "ageRestrictions": "7",
           "distributor": "Sony Pictures",
@@ -27,7 +27,7 @@
           ],
           "reviews": [
                {
-                    "source": "imbd",
+                    "source": "IMDb",
                     "quote": "Den här filmen misslyckas aldrig med att få mig att skratta",
                     "stars": 5,
                     "max": 10
@@ -47,7 +47,7 @@
                "USA"
           ],
           "productionYear": 1999,
-          "length": 97,
+          "length": "1 tim 37 min",
           "genre": "Romantik/Komedi",
           "ageRestrictions": "7",
           "distributor": "Walt Disney Studios",
@@ -68,7 +68,7 @@
           ],
           "reviews": [
                {
-                    "source": "imbd",
+                    "source": "IMDb",
                     "quote": "Väldigt bra romantisk komedi",
                     "stars": 7,
                     "max": 10
@@ -88,7 +88,7 @@
                "USA"
           ],
           "productionYear": 2016,
-          "length": 97,
+          "length": "1 tim 48 min",
           "genre": "Action/Äventyr",
           "ageRestrictions": "15",
           "distributor": "20th Century Studios",
@@ -109,7 +109,7 @@
           ],
           "reviews": [
                {
-                    "source": "imbd",
+                    "source": "IMDb",
                     "quote": "Bättre än förväntat!",
                     "stars": 8,
                     "max": 10
@@ -129,7 +129,7 @@
                "USA"
           ],
           "productionYear": 2021,
-          "length": 163,
+          "length": "2 tim 43 min",
           "genre": "Action/Äventyr",
           "ageRestrictions": "15",
           "distributor": "Universal Studios",
@@ -150,7 +150,7 @@
           ],
           "reviews": [
                {
-                    "source": "imbd",
+                    "source": "IMDb",
                     "quote": "Mycket för alla Bond-fans att njuta av",
                     "stars": 7,
                     "max": 10
@@ -170,7 +170,7 @@
                "USA"
           ],
           "productionYear": 1995,
-          "length": 119,
+          "length": "1 tim 59 min",
           "genre": "Action/Komedi",
           "ageRestrictions": "15",
           "distributor": "Columbia Pictures",
@@ -191,7 +191,7 @@
           ],
           "reviews": [
                {
-                    "source": "imbd",
+                    "source": "IMDb",
                     "quote": "Bra action/komedi",
                     "stars": 6,
                     "max": 10
@@ -208,7 +208,7 @@
           "id": 6,
           "title": "UPP",
           "productionYear": 2009,
-          "length": 96,
+          "length": "1 tim 36",
           "genre": "Äventyr/Barn",
           "ageRestrictions": "7",
           "distributor": "Walt Disney Pictures",
@@ -224,7 +224,7 @@
           ],
           "reviews": [
                {
-                    "source": "imbd",
+                    "source": "IMDb",
                     "quote": "En bra animerad film behöver en mycket bra historia, och den här har en.",
                     "stars": 8,
                     "max": 10

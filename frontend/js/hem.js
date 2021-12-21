@@ -1,4 +1,5 @@
 // Content for the start/hem page
+// using carousel Bootstrap for cycling through filmsposter
 function hem() {
   $('main').html(`
   
@@ -46,7 +47,7 @@ function hem() {
   var newdiv = document.createElement('div');
   newdiv.className = 'row';
   
-
+  
 
   for (let i = 0; i < data.filmer.length; i++) {
     let div = document.createElement("div");
@@ -54,6 +55,6 @@ function hem() {
     newdiv.appendChild(div);
     div.innerHTML = `<div class = "hem-poster-title"><p><a href="#film-${data.filmer[i].id}"><img class="poster" src="${data.filmer[i].images}"></img></a></p><h2 id ='title'><br>  ${data.filmer[i].title} <br></h2></div>`
   }
-  //console.log('html Ã¤r:' + html.innerHTML);
+
   $('main').append(newdiv);
 }
