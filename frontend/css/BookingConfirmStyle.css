@@ -63,6 +63,7 @@ button.cancelBtn.btn-success {
   margin-bottom: 100%;
   padding-bottom: 40px;
   color: white;
+  border-radius: 10px;
 }
 
 .myBookingPage #myBookingPageH1 {

@@ -3,7 +3,7 @@
 // seats should be an array of set numbers
 let a = "";
 
-//Hisham 
+
 // Add totalPrice as parameter 
 async function book(showId, totalPrice, seats) {
 
@@ -19,7 +19,7 @@ async function book(showId, totalPrice, seats) {
 
   // Check that all the seats we want to book are available
   for (let seat of seats) {
-    // Hisham 
+    
     // before  seat  after seat.number
     //  
     if (!availableSeats.includes(seat.number)) {
@@ -101,9 +101,9 @@ function freeSeats(showId) {
 
 // the function to select seats to book
 function seatsFunction(a) {
-  // Hisham 
-  // prices 
-  //
+   
+  // set the price for different type of person
+  
   const priceingTypes = [{
     type: "Barn",
     amount: "65"

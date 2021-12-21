@@ -1,15 +1,16 @@
 //Content for the films view
+//fetch informations about the specific film by id.
+// using Bootstrap for films post and text 
 function filmer(id) {
      let film = data.filmer.find(x => x.id === id);
 
-     $('main').html(/*html*/`
+     $('main').html(`
 		<div class="row camera-bg">
 			<div class="col-12">
 				<iframe class="youtubeTrailers" content="width=device-width, initial-scale=1.0" src="https://www.youtube.com/embed/${film.youtubeTrailers}
 														" title="YouTube video" allowfullscreen></iframe>
 			</div>
 		</div>
-
 
 		<div class="row mt-5">
 

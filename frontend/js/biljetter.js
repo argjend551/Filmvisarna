@@ -1,7 +1,7 @@
 //Content for the ticket page
 function biljetter() {
 
-     $('main').html(/*html*/`
+     $('main').html(`
      
      <div id="selectors">
      <select class="form-select form-select-sm" id="mySelect" aria-label=".form-select-sm example">
