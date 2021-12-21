@@ -2,8 +2,7 @@
 // showId = id of the show to book
 // seats should be an array of set numbers
 let a = "";
-
-
+let selectedSeats = [];
 // Add totalPrice as parameter 
 async function book(showId, totalPrice, seats) {
 
@@ -19,7 +18,6 @@ async function book(showId, totalPrice, seats) {
 
   // Check that all the seats we want to book are available
   for (let seat of seats) {
-    
     // before  seat  after seat.number
     //  
     if (!availableSeats.includes(seat.number)) {
@@ -27,7 +25,7 @@ async function book(showId, totalPrice, seats) {
     }
   }
 
-  function makeid(length) {
+  function makeid() {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var charactersLength = characters.length;
@@ -71,8 +69,11 @@ function freeSeats(showId) {
   for (let booking of data.bookings) {
     // If it is not the same show then do nothing
     if (booking.showId != showId) { continue; }
+    // taking out the seats number
+    let seat = booking.seats.map(x => x.number);
     // Add the seats as occupied
-    occupiedSeats.push(...booking.seats);
+
+    occupiedSeats.push(...seat);
   }
 
   // Build an array with all seats in the auditorium
@@ -100,10 +101,9 @@ function freeSeats(showId) {
 }
 
 // the function to select seats to book
-function seatsFunction(a) {
-   
-  // set the price for different type of person
-  
+function seatsFunction() {
+  // prices 
+  //
   const priceingTypes = [{
     type: "Barn",
     amount: "65"
@@ -123,13 +123,13 @@ function seatsFunction(a) {
   // confirm model
   //
   let modelForm = new bootstrap.Modal($("#confirmBooking"));
-  $("#confirmBooking").on("hidden.bs.modal", function() {
+  $("#confirmBooking").on("hidden.bs.modal", function () {
     $(".all-seats").text("");
     selectedSeats = [];
     $(".btn").attr("disabled", true);
-});
+  });
   //creating empty array
-  let selectedSeats = [];
+  selectedSeats = [];
   // if you click on a seat displayed on the screen,
   // change the class attribute to selected-seats and push the array index you pressed to array selectedSeats
   $('.seats').click(function () {
@@ -198,9 +198,11 @@ function seatsFunction(a) {
         price: selectedPriceingType.amount,
       }
     });
+    if (selectedSeats.length > 0) {
+      book(showid, totalPrice, [...selectedSeats]);
 
-    book(showid, totalPrice, [...selectedSeats]);
-    // 
+    }
+
     modelForm.hide();
     window.bokningsbekraftelse();
     selectedSeats = [];
@@ -212,7 +214,6 @@ function seatsFunction(a) {
   // when you press the book button show confirm button.
   $(".btn3").on("click", function () {
 
-    console.log(showid);
     if (selectedSeats.length > 0) {
 
       // to get show information

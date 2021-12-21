@@ -54,6 +54,7 @@ td {
 
 .btn3 {
   margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 .screen {
@@ -119,6 +120,14 @@ td {
 
 }
 
+.modal-footer {
+  justify-content: center;
+}
+
+#datemodal {
+  text-align: center;
+}
+
 #span3 {
   display: block;
   width: 65%;
@@ -136,10 +145,20 @@ td {
   margin-left: 20%;
 }
 
+#date-picker-example {
+  margin-left: 220px;
+  position: absolute;
+  border: none;
+  padding: 0 1em 0 0;
+  height: 22px;
+  min-width: 160px;
+  max-width: 160px;
+  line-height: inherit;
+}
 
 @media only screen and (max-width: 650px) {
   .seats {
-    width: 24px;
+    width: 23px;
     height: 24px;
     font-size: 12px;
     text-align: center;
@@ -147,16 +166,38 @@ td {
 
   .selected-seat {
     font-size: 12px;
-    width: 24px;
+    width: 23px;
     height: 24px;
     text-align: center;
   }
 
   .disabledseats {
     font-size: 12px;
-    width: 24px;
+    width: 23px;
     height: 24px;
     text-align: center;
   }
 
+  #date-picker-example {
+    margin-top: -35px;
+    margin-left: 20px;
+    position: absolute;
+    padding: 0 1em 0 0;
+    height: 22px;
+    min-width: 160px;
+    max-width: 160px;
+    line-height: inherit;
+  }
+
+  #span3 {
+    display: block;
+    width: 80%;
+    color: white;
+    margin-top: 200px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    height: 350px !important;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
 }
