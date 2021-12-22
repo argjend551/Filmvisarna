@@ -3,7 +3,7 @@ let bookingNumber;
 //Lets user enter booking number as input and runs the function setBookingNumber() to validate it and set it if it exists.
 //If it exists the function renderBookingInfo() is run and adds booking information in the div with class 'input'.
 function minaBokningar() {
-  $('main').html(`
+  $('main').html(/*html*/`
 <div class="myBookingPage">
   <div class="row mt-1">
     <div class="offset-2 offset-sm-3 offset-lg-4 col-8 col-sm-6 col-lg-4" id="enterBookingInfo">
@@ -93,6 +93,7 @@ function minaBokningar() {
   </div>
 </div>
 `);
+  window.scrollTo(0, 0);
 }
 //Finds the booking to cancel in bookings.json and then the
 //index of that booking. Then removes the booking-object at that
