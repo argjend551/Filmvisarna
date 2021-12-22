@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "V8731",
+    "showId": 2,
+    "seats": [
+      {
+        "number": 40,
+        "type": "Vuxen",
+        "price": "85"
+      },
+      {
+        "number": 41,
+        "type": "Vuxen",
+        "price": "85"
+      }
+    ],
+    "totalPrice": 170
+  }
+]
