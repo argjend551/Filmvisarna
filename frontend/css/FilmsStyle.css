@@ -13,17 +13,19 @@ body {
 
 
 .poster {
-  height: 350px;
+  height: 440px;
   width: auto;
   border-radius: 25px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+  
 }
 
 .poster:hover {
-
+   filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
   transform: scale(1.12);
   transition: all 0.4s;
 }
@@ -74,14 +76,11 @@ z-index:-1;
    width: 100%;
 }
 
-.film-images-fluid{
-/*height:auto; 
-max-height: 10%;
-width: 20%; 
-position:absolute;
-*/
-}
 
+.img-fluid{
+   filter: drop-shadow(4px 4px 4px rgb(0, 0, 0));
+
+}
 
 .text-fluid{
   width: 30%;
@@ -99,6 +98,9 @@ position:absolute;
   margin-right: 40px;
   float: right;
   margin-top: 100px;
+  filter: drop-shadow(0px 4px 10px rgb(219, 215, 217));
+  border-radius: 5px;
+  
 }
 
 @media only screen and (max-width: 650px)  {

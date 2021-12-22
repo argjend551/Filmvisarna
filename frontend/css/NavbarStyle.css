@@ -13,7 +13,9 @@
 
 .navbar-light {
 
-     background-color: #8d2168;
+     background-color: #8d2168; 
+     -webkit-filter: drop-shadow(20px 20px 20px rgb(255, 255, 255));
+  filter: drop-shadow(10px 10px 10px rgb(19, 19, 19) );
 }
 
 .nav-link {
@@ -21,16 +23,29 @@
      border-radius: 20%;
      left: 100px;
      color: white !important;
+     
+    
+    
 }
 
 
 
 .nav-link:hover {
 
-     background-color: #7e1d5c;
+    
+   
+     border-bottom: 1.5px double rgb(199, 199, 199);
+     width: fit-content;
+     position: relative;
+     border-radius: 20%;
+     left: 100px;
+     right: 100px;   
+     
+     
 }
 
 
 .navbar-light .navbar-toggler-icon {
      color: black;
+
 }

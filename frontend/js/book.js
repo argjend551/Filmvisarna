@@ -102,8 +102,8 @@ function freeSeats(showId) {
 
 // the function to select seats to book
 function seatsFunction() {
-  // prices 
-
+  // set the prices for different type of person 
+  
   const priceingTypes = [{
     type: "Barn",
     amount: "65"
@@ -182,11 +182,11 @@ function seatsFunction() {
           return false;
         }
       });
-      //
+      // if user doesn't choose any of the choices, the choice will be adult
 
       if (typeof selectedPriceingType != 'object') {
         selectedPriceingType = {
-          type: "Normal",
+          type: "Vuxen",
           amount: "85"
 
         }
@@ -209,7 +209,7 @@ function seatsFunction() {
 
 
   });
-  //
+  
 
   // when you press the book button show confirm button.
   $(".btn3").on("click", function () {
@@ -242,7 +242,7 @@ function seatsFunction() {
       bodyContent += `</div>`;
       $("#confirmBookingBody").html(bodyContent);
       modelForm.show();
-      // 
+       
 
 
     }
