@@ -13,6 +13,8 @@
      <link rel="stylesheet" href="css/FooterStyle.css">
      <link rel="stylesheet" href="css/FilmsStyle.css">
      <link rel="stylesheet" href="css/BookingConfirmStyle.css">
+     <link rel="stylesheet" href="css/popBookingConfirm.css">
+
      <style>
           @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=Roboto+Condensed:wght@300&family=Zen+Old+Mincho&display=swap');
      </style>
@@ -80,24 +82,20 @@
 
 
      <!-- Confirm Book Modal   -->
-
-     <div class="modal fade" id="confirmBooking" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="confirmBookingLabel" aria-hidden="true">
+     <div class="modal fade" id="confirmBooking" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="confirmBookingLabel" aria-hidden="true">
           <div class="modal-dialog">
-               <div class="modal-content">
-                   
-                    <div class="modal-body" id="confirmBookingBody">
-
-                    </div>
-                    <div class="modal-footer">
-                         <button type="button" class="btn btn-primary" id="btnConfirmBook">Bekräfta</button>
-                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Avbryt</button>
-
-                    </div>
-               </div>
+              <div class="modal-content">
+                  <h1 id="confirmBookingTitle" class="modal-title"></h1>
+                  <div class="modal-body" id="confirmBookingBody">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-success" id="btnConfirmBook">Bekräfta</button>
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Avbryt</button>
+  
+                  </div>
+              </div>
           </div>
-     </div>
-
+      </div>
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

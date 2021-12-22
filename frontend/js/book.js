@@ -216,43 +216,42 @@ function seatsFunction() {
 
     if (selectedSeats.length > 0) {
 
-      // to get show information
-      let show = data.shows.find(x => x.id == (showid));
-      let bodyContent = `<div class='d-flex flex-column'>
-            <div> 
-            <h1>  ${show.film}<h1>
-            <h3>${show.auditorium}<br>${show.date}<br>Kl: ${show.time}</h3>
-            </div>
-          `;
-      selectedSeats.forEach(function (seat) {
-        bodyContent += `
-        <div class=' mb-2' > <h3> Stolsnummer : ${seat} </h3>   <div class="d-flex flex-wrap justify-content-evenly">
-              `;
-        priceingTypes.forEach(function (pricingType, index) {
+        // to get show information
+        let show = data.shows.find(x => x.id == (showid));
+        $("#confirmBookingTitle").text(show.film);
+        let bodyContent = `
+        <div class='d-flex flex-column'>
+        <div id="modal-film-info"> 
 
-          bodyContent += `
-          <div class="btn-group my-1" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="seat-${seat}" id="btnradio-${index}-${seat}" autocomplete="off"  value=${pricingType.type}  ${index === 1 ? 'checked' : ''}>
-          <label class="btn btn-outline-primary" for="btnradio-${index}-${seat}">${pricingType.type} (${pricingType.amount}kr) </label>
+        <h3>${show.auditorium}<br>${show.date}<br>Kl: ${show.time}</h3>
         </div>
         `;
+        selectedSeats.forEach(function(seat) {
+            bodyContent += `
+        <div class=' mb-2' > <h3> Stolsnummer : ${seat} </h3>   <div class="d-flex flex-wrap justify-content-evenly">
+          `;
+            priceingTypes.forEach(function(pricingType, index) {
+
+                bodyContent += `
+        <div class="btn-group my-1" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="seat-${seat}" id="btnradio-${index}-${seat}" autocomplete="off"  value=${pricingType.type}  ${index === 1 ? 'checked' : ''}>
+        <label class="btn  btn-outline-success" for="btnradio-${index}-${seat}">${pricingType.type} (${pricingType.amount}kr) </label>
+        </div>
+        `;
+            });
+            bodyContent += `</div> </div>`
         });
-        bodyContent += `</div> </div>`
-      });
-      bodyContent += `</div>`;
-      $("#confirmBookingBody").html(bodyContent);
-      modelForm.show();
+        bodyContent += `</div>`;
+        $("#confirmBookingBody").html(bodyContent);
+        modelForm.show();
+        // 
 
+            }
 
+            freeSeats(showid);
 
-    }
-
-    freeSeats(showid);
-
-  });
-}
-
-
+          });
+        }
 
 
 function storaSalong(seats) {

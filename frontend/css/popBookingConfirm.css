@@ -1,0 +1,49 @@
+/* By Hisham */
+
+
+/* 
+    by id 
+    by class
+    by attribute input[name *= "test"]
+    by tag name 
+
+*/
+
+#confirmBooking>.modal-dialog>.modal-content {
+    background-color: white ; 
+    /* rgb(58, 57, 57); */
+    border-radius: 40px;
+    color: rgb(58, 57, 57);
+}
+
+#confirmBooking .modal-title {
+    padding: 0.5rem;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px #8d2168;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#modal-film-info {
+    margin: 0px 0px 25px;
+    border-bottom: 1px solid;
+    padding-bottom: 25px;
+}
+
+#confirmBooking .modal-body h3 {
+    text-align: center;
+    line-height: 1.3;
+    text-shadow: 1px 1px #8d2168;
+    font-size: 30px;
+}
+
+#confirmBooking .modal-footer {
+    background-color: rgb(87, 87, 87);
+    border-radius: 40px;
+}
+
+#confirmBooking .modal-footer button,
+#confirmBooking .modal-body label {
+    font-weight: bolder;
+}
