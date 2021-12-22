@@ -69,7 +69,7 @@ function freeSeats(showId) {
   for (let booking of data.bookings) {
     // If it is not the same show then do nothing
     if (booking.showId != showId) { continue; }
-  // taking out the seats number
+    // taking out the seats number
     let seat = booking.seats.map(x => x.number);
     // Add the seats as occupied
 
@@ -103,7 +103,7 @@ function freeSeats(showId) {
 // the function to select seats to book
 function seatsFunction() {
   // prices 
-  //
+
   const priceingTypes = [{
     type: "Barn",
     amount: "65"
@@ -123,11 +123,11 @@ function seatsFunction() {
   // confirm model
   //
   let modelForm = new bootstrap.Modal($("#confirmBooking"));
-  $("#confirmBooking").on("hidden.bs.modal", function() {
+  $("#confirmBooking").on("hidden.bs.modal", function () {
     $(".all-seats").text("");
     selectedSeats = [];
     $(".btn").attr("disabled", true);
-});
+  });
   //creating empty array
   selectedSeats = [];
   // if you click on a seat displayed on the screen,
@@ -202,7 +202,7 @@ function seatsFunction() {
       book(showid, totalPrice, [...selectedSeats]);
 
     }
-    
+
     modelForm.hide();
     window.bokningsbekraftelse();
     selectedSeats = [];
@@ -247,14 +247,6 @@ function seatsFunction() {
 
     }
 
-    $(".row1").empty();
-    $(".row2").empty();
-    $(".row3").empty();
-    $(".row4").empty();
-    $(".row5").empty();
-    $(".row6").empty();
-    $(".row7").empty();
-    $(".row8").empty();
     freeSeats(showid);
 
   });
@@ -264,6 +256,7 @@ function seatsFunction() {
 
 
 function storaSalong(seats) {
+  //This will create the seats on the screen with the for loops
   let html = '';
   for (let row of seats) {
     html += '<div class="crow">'
@@ -280,6 +273,7 @@ function storaSalong(seats) {
 }
 
 function lillaSalong(seats) {
+  //This will create the seats on the screen with the for loops
   let html = '';
   for (let row of seats) {
     html += '<div class ="crow">'
