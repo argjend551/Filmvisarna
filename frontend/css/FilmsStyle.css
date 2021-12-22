@@ -24,10 +24,14 @@ body {
   
 }
 
-.poster:hover {
-   filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+.hem-poster-title:hover {
+   
   transform: scale(1.12);
   transition: all 0.4s;
+}
+.poster:hover{
+  filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+
 }
 
 
