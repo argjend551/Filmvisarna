@@ -44,7 +44,7 @@ function hem() {
   // fetch data from json file
   // using bootstrap grid system for bulding responsive 6 column for films poster and title
   
-  var newdiv = document.createElement('div');
+  let newdiv = document.createElement('div');
   newdiv.className = 'row';
   
   

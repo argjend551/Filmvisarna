@@ -20,14 +20,18 @@ padding-top: 60px;
 
 .carouselContainer {
 margin-bottom: 60px;
+
 }
 .carousel-control-next-icon{
   position: relative;
 }
+
 .carousel-inner > .carousel-item > img {
   height: auto !important;
   max-height: 800px !important;
-  -webkit-filter: drop-shadow(20px 20px 20px 10px rgb(255, 255, 255));
-  filter: drop-shadow(10px 10px 5px rgb(19, 19, 19) );
- 
+  -webkit-filter: drop-shadow(20px 20px 20px rgb(20, 20, 20));
+  filter: drop-shadow(8px 10px 5px rgb(19, 19, 19) );
+   
 }
+
+

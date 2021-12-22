@@ -23,27 +23,20 @@
      border-radius: 20%;
      left: 100px;
      color: white !important;
-     
-    
-    
+      
 }
-
 
 
 .nav-link:hover {
 
-    
-   
-     border-bottom: 1.5px double rgb(199, 199, 199);
+     border-bottom: 1.55px double rgb(199, 199, 199);
      width: fit-content;
      position: relative;
      border-radius: 20%;
      left: 100px;
      right: 100px;   
      
-     
 }
-
 
 .navbar-light .navbar-toggler-icon {
      color: black;
