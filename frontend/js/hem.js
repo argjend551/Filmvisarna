@@ -48,7 +48,7 @@ function hem() {
   newdiv.className = 'row';
   
   
-
+  // for loop for films poster and title
   for (let i = 0; i < data.filmer.length; i++) {
     let div = document.createElement("div");
     div.className = 'col-md-4 col-xs-4';  

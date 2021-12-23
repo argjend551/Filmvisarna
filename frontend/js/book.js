@@ -235,7 +235,7 @@ function seatsFunction() {
                 bodyContent += `
         <div class="btn-group my-1" role="group" aria-label="Basic radio toggle button group">
         <input type="radio" class="btn-check" name="seat-${seat}" id="btnradio-${index}-${seat}" autocomplete="off"  value=${pricingType.type}  ${index === 1 ? 'checked' : ''}>
-        <label class="btn  btn-outline-success" for="btnradio-${index}-${seat}">${pricingType.type} (${pricingType.amount}kr) </label>
+        <label class="btn  btn-outline-success" for="btnradio-${index}-${seat}">${pricingType.type} (${pricingType.amount} kr) </label>
         </div>
         `;
             });

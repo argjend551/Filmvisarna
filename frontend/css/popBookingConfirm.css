@@ -1,17 +1,5 @@
-/* By Hisham */
-
-
-/* 
-    by id 
-    by class
-    by attribute input[name *= "test"]
-    by tag name 
-
-*/
-
 #confirmBooking>.modal-dialog>.modal-content {
     background-color: white ; 
-    /* rgb(58, 57, 57); */
     border-radius: 40px;
     color: rgb(58, 57, 57);
 }
